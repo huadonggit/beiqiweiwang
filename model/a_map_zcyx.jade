@@ -1,0 +1,15 @@
+//Created by yanhuadong on 2016/4/26.
+link(type='text/css',href='static/css/a_map_zcyx.css',rel='stylesheet')
+- var imgadd='static/img/'
+- var name=['北京龙爵陶瓷艺术品有限公司','中城银信控股集团新能源有限公司','中城银信（上海）资产管理有限公司','中城银信（上海）金融信息服务有限公司','中城银信(上海)股权投资基金管理有限公司','浙江中城银信资产管理有限公司','山东中城银信资产管理有限公司','吉林省中城银信资产管理有限公司','江苏中城银信资产管理有限公司','深圳中城银信资产管理有限公司','福建中城银信资产管理有限公司','中城银信（国际）控股集团有限公司','中城农牧业有限公司','梅河口中城银信光伏农业科技有限公司','吉林中城银信天然气有限公司','吉林省昌融经贸有限公司']
+.map-box-address
+	img.map-box-big(width='100%',src=imgadd+'map_address.png')
+	- for (var i=0;i<name.length;i++)
+		a(href='#')
+			//img.map-box-blue(width='10px',height='10px',src=imgadd+'map_circle_03.png')
+			//img.map-box-gray(width='10px',height='10px',src=imgadd+'map_circle_11.png')
+			.map-box-list
+				.map-box-left
+					p #{name[i]}
+				.map-box-right
+					img.map-box-arrow(src=imgadd+'map_circle_07.png')

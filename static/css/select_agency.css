@@ -1,0 +1,44 @@
+
+.tag_agency_select{
+    /*height:40px;*/
+    font-size: 16px;
+    color: #666;
+    line-height:40px;
+    text-align: left;
+    background:#ccc  url(../img/buycar_agency_background_06.png) no-repeat right ;
+    /*margin-right: 0.805%;*/
+    display:inline-block;
+    position: absolute;
+    cursor:pointer}
+.tag_agency_select_hover{ color:#666; background:#ccc url(../img/buycar_agency_background_06.png) no-repeat right }
+.tag_select_open{ color:#666; background:#ccc;}
+ul.tag_options{font-size: 16px;
+    color: #000;
+    /*line-height: 50px;*/
+    padding:0 0;
+    text-align: left;
+    background: #fff;
+    overflow: hidden;
+    /*float: left;*/
+    border: none;
+    width:100%;
+    left:0;
+    top:40px;
+    /*margin-left:-4.91%;*/
+    /*margin-right: 0.805%;*/
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position:absolute;/*margin:0;*/
+    list-style:none;margin:0;
+    /* overflow:hidden; */overflow-y:auto;  cursor:pointer; z-index:1000 }
+ul.tag_options li{font-size: 15px;
+    /*display: block;*/
+    color: #000;
+    line-height: 20px;
+    text-align: left;
+    background: #f1f2f3;padding: 5px 18px 5px 16px;text-decoration:none; font-weight:normal; }
+ul.tag_options li.open_hover{background:#3399ff;color:#fff; font-weight:normal; font-size:15px}
+ul.tag_options li.open_selected{background:#3399ff; font-size:15px;font-weight:bold; }
+
+/*.agency-background{  background: #ccc url('../img/buycar_agency_background_06.png') no-repeat right;  }*/

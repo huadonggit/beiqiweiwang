@@ -1,0 +1,30 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "yhd";
+
+.d_banner1 {
+	position: relative;
+	overflow: hidden;
+	.d_banner1_pic {
+		display: block;
+		width:100%;
+	}
+	.d_text {
+		position:absolute; left:0; top:0; width:100%; height:100%;
+		a {
+			text-decoration: none;
+			color:#fff;
+		}
+		.d_tit_h3 {
+			font-size:18px; height:60px; line-height:60px; margin:110px 0 0 90px; position:relative;
+			.d_banner1_pos {
+				width:26px; height:2px; background:url('@{images}/d_ico4-1.png') no-repeat; position:absolute; left:0; bottom:0;
+			}
+		}
+		.d_tit_h4 {
+			font-size:48px; color:#fff; margin:26px 0 0 90px;
+		}
+	}
+}

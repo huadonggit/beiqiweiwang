@@ -1,0 +1,141 @@
+.news_banner {
+  width: 100%;
+  overflow: hidden;
+  margin: 2% 0% 0% ;
+}
+.news_banner .news_banner_box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.news_banner .news_banner_box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.news_banner .news_banner_box .title {
+  position: absolute;
+  color: #ffffff;
+  left: 8%;
+  top: 20%;
+}
+.news_banner .news_banner_box .title p.top_title {
+  font-size: 1em;
+}
+.news_banner .news_banner_box .title .under_line {
+  height: 1px;
+  width: 1.5em;
+  border-top: #ffffff solid 1px;
+}
+.news_banner .news_banner_box .title p.sub_title {
+  font-size: 3.5em;
+  margin: 0.5em 0em;
+}
+.timeLineMune {
+  padding: 2% 0;
+  width: 100%;
+  overflow: hidden;
+  outline: #cc11cc dotted 0px;
+  background-color: #eeeeee;
+}
+.timeLineMune .leftBtn {
+  width: 10%;
+  float: left;
+  padding-top: 0.5%;
+  text-align: center;
+}
+.timeLineMune ul {
+  float: left;
+  width: 80%;
+}
+.timeLineMune ul li {
+  display: inline-block;
+  line-height: 1.8em;
+  font-size: 1.6em;
+  width: 20%;
+  text-align: center;
+  float: left;
+}
+.timeLineMune ul li.on {
+  color: #993300;
+}
+.timeLineMune .rightBtn {
+  float: left;
+  width: 10%;
+  padding-top: 0.5%;
+  text-align: center;
+}
+.medianewsBox {
+  display: block;
+  padding: 0% 8% 0% 2%;
+  /*
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+}
+.medianewsBox a {
+  text-decoration: none;
+}
+.medianewsBox .monthNews .month {
+  font-size: 1.8em;
+  color: #999999;
+  display: inline-block;
+  padding-top: 3%;
+}
+.medianewsBox .monthNews .newsList {
+  padding-left: 5%;
+}
+.medianewsBox .monthNews .newsList .listItem {
+  border-top: #f2f2f2 solid 1px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.medianewsBox .monthNews .newsList .listItem .newsTitleImg {
+  float: left;
+  width: 200px;
+  height: 150px;
+}
+.medianewsBox .monthNews .newsList .listItem .newsTitleImg img {
+  width: 100%;
+  height: 100%;
+}
+.medianewsBox .monthNews .newsList .listItem .tixtBox {
+  margin-left: 200px;
+  padding-left: 3%;
+}
+.medianewsBox .monthNews .newsList .listItem .tixtBox .newstitle {
+  font-size: 1.6em;
+  color: #333333;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+}
+.medianewsBox .monthNews .newsList .listItem .tixtBox .newsDate img {
+  padding-right: 1em;
+}
+.medianewsBox .monthNews .newsList .listItem .tixtBox .newsDate span {
+  position: relative;
+  top: 1px;
+  font-size: 1.1em;
+}
+.medianewsBox .monthNews .newsList .listItem .tixtBox p.newssummary {
+  max-height: 4.5em;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #999999;
+  overflow: hidden;
+}
+.medianewsBox .clearfix:before,
+.medianewsBox .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.medianewsBox .clearfix:after {
+  clear: both;
+}
+.medianewsBox .clearfix {
+  *zoom: 1;
+}

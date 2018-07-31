@@ -1,0 +1,14 @@
+
+- var d_yearData=[{txt:'2016',href:'javascript:;'},{txt:'2015',href:'javascript:;'},{txt:'2014',href:'javascript:;'},{txt:'2013',href:'javascript:;'},{txt:'2012',href:'javascript:;'}]
+.d_year#tab
+	span.d_left.d_pos#d_left
+	span.d_right.d_pos#d_right
+	ul.d_year_part.clearfix
+		- for (var i=0; i<d_yearData.length; i++)
+			- var num=i;
+			if (i == 0)
+				li.fl&attributes({"class":'d_active d_li'+num})
+					a.j-btn&attributes({"href":d_yearData[i].href}) #{d_yearData[i].txt}
+			else
+				li.fl&attributes({"class": 'd_li' + num})
+					a.j-btn&attributes({"href": d_yearData[i].href}) #{d_yearData[i].txt}

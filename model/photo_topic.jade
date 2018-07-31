@@ -1,0 +1,17 @@
+//
+   Created by gaojian on 16/3/10.
+    - var rootUrl = "topic/"
+    - var topic_photo_url = [rootUrl+"topic_photo.jpg"]
+    - var topic_photo_url2 = [rootUrl+"topic_photo2.jpg"]
+    - var topic_photo_url3 = [rootUrl+"topic_photo3.jpg"]
+    - var topic_photo_url4 = [rootUrl+"topic_photo4.jpg"]
+    - var topicDataList = [{title:'北汽威旺言必行,行比诚 "三包" 北汽威旺服务发布仪式',photoUrl:topic_photo_url},{title:'爱在青海 北汽威旺环保公益行',photoUrl:topic_photo_url2},{title:'北汽威旺环保公益行',photoUrl:topic_photo_url3},{title:'北汽威旺微面 "十万用户倒计时" 活动在京揭幕',photoUrl:topic_photo_url3},{title:'北汽威旺微面 "十万用户倒计时" 活动在京揭幕',photoUrl:topic_photo_url},{title:'爱在青海 北汽威旺环保公益行',photoUrl:topic_photo_url2},{title:'北汽威旺言必行，行必诚“三包”北汽威旺服务发布仪式',photoUrl:topic_photo_url4},{title:'爱在青海 北汽威旺环保公益行',photoUrl:topic_photo_url2},{title:'北汽威旺微面 "十万用户倒计时" 活动在京揭幕',photoUrl:topic_photo_url3}]
+
+.topic_container
+    ul.topicList.clearfix
+        each item,index in topicDataList
+            li.topicItem
+                a(href="javascript:;")
+                    .photo
+                        img&attributes({src: item.photoUrl})
+                    p.title #{item.title}

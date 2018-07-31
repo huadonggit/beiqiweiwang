@@ -1,0 +1,52 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.d_year {
+	background:#eeeeee;
+	margin:5px 0 20px 0;
+	position: relative;
+	a {
+		text-decoration:none;
+		color:#666;
+	}
+	.d_pos {
+		width:14px;
+		height:24px;
+		position: absolute;
+		top:50%;
+		margin:-12px 0 0 0;
+	}
+	.d_left {
+		background:url('@{images}/know/d_icon5-2.png') no-repeat;
+		right:94%;
+	}
+	.d_left:hover {
+		background:url('@{images}/know/d_icon5-4.png') no-repeat;
+	}
+	.d_right {
+		background:url('@{images}/know/d_icon5-5.png') no-repeat;
+		left:94%;
+	}
+	.d_right:hover {
+		background:url('@{images}/know/d_icon5-3.png') no-repeat;
+	}
+	.d_year_part {
+		width:86.95%;
+		margin:0 auto;
+		li {
+			line-height:100px;
+			text-align: center;
+			font-size:24px;
+			width:20%;
+			margin:0;
+			padding:0;
+		}
+		li.d_active {
+			a {
+				color:#9d1b12;
+			}
+		}
+	}
+}

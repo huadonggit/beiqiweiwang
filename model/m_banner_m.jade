@@ -1,0 +1,12 @@
+.m_banner
+	img&attributes({src:bannerproduct})
+.m_banner_gray
+	- for (var i=0; i<bannerdetail.length;i++)
+		.m_banner_list
+			span #{bannerdetail[i]}
+			span.m_list.floor
+				ul
+					li.m_list.floor.up #{bannerunit[i]}
+					li #{bannername[i]}
+
+

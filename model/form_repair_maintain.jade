@@ -1,0 +1,99 @@
+
+form(name='repairform')
+	.s-r-m-word-up
+		p.t-n-red 请选择您到店维修保养信息
+			span.t-n-gray *为必填项。您的信息，我们将会完全保密，请您放心填写。
+	.server-repair-maintain
+		.t-n-list-box
+			.t-n-list
+				//input.bq-radio.repair-radio-left(type="radio" name="maintain" value="")
+				//span 保养
+				//input.bq-radio.repair-radio-right(type="radio" name="maintain" value="")
+				//span 维修
+				input.bq-radio.repair-radio-left(type="radio" name="maintain" id="care")
+				label(for="care")
+					span 保养
+				input.bq-radio.repair-radio-right(type="radio" name="maintain" id="maintain")
+				label(for="maintain")
+					span 维修
+				//input.bq-radio.repair-radio-left(type="radio" name="care" id="care" value="")
+				//label(for="care")
+				//	span 保养
+				//input.bq-radio.repair-radio-right(type="radio" name="maintain" id="maintain" value="")
+				//label(for="maintain")
+				//	span 维修
+			.t-n-list
+				label.label-left(for="")
+					span.star *
+					| 第
+				input.t-n-repair(type="text" name="num")
+				label.t-n-repair-label(for="")
+					| 次保养，公里数
+				input.t-n-repair(type="text" name="kilometre")
+				| 公里
+	.s-r-m-word-up
+		p.t-n-red 请选择车辆
+	.server-repair-maintain
+		.t-n-list-box
+			.t-n-list
+				label.label-left.fl(for="")
+					span.star *
+					| 车系/车型
+				select(class="form-car-serise select-repair-serise" value="" placeholder="" name="" id="")
+					option(value="") 车系
+					option(value="") 车系
+					option(value="") 车系
+				select(class="form-car-model select-repair-model" value="" placeholder="" name="" id="")
+					option(value="") 车型
+					option(value="") 车型
+					option(value="") 车型
+			.t-n-list
+				label.label-left(for="")
+					span.star *
+					| 车架号
+				input.t-n-frame(type="text" name="repair" value="")
+	.s-r-m-word-up
+		p.t-n-red 请填写您的个人信息
+	.server-repair-maintain
+		.t-n-list-box
+			.t-n-list
+				label.label-left(for="")
+					span.star *
+					| 真实姓名
+				input.t-n-name(type="text" name="name")
+			.t-n-list
+				label.label-left(for="")
+					span.star *
+					| 联系电话
+				input.t-n-phone(type="text" name="phone")
+				label.lable-email-width(for="")
+					| E-mail
+				input.t-n-e(type="text" name="email")
+			.t-n-list
+				label.label-left.fl(for="")
+					span.star *
+					| 经销商
+				select(class="form-repair-city select-repair-city" value="" placeholder="" name="" id="")
+					option(value="") 城市1
+					option(value="") 城市2
+					option(value="") 城市3
+				select(class="form-repair-area select-repair-area" value="" placeholder="" name="" id="")
+					option(value="") 地区4
+					option(value="") 地区5
+					option(value="") 地区6
+				select(class="form-repair-people select-repair-people" value="" placeholder="" name="" id="")
+					option(value="") 经销商7
+					option(value="") 经销商8
+					option(value="") 经销商9
+		.submit-box
+			input.bq-submit(type="submit" value="提交")
+
+
+
+
+
+			//span.star *
+			//label.zp-first-check 经销商
+			//select.zp-select-addrprov(id="seachprov" name="seachprov" onChange="changeComplexProvince(this.value, sub_array, 'seachcity', 'seachdistrict');")
+			//select.zp-select-addrcity(id="seachcity" name="homecity" onChange="changeCity(this.value,'seachdistrict','seachdistrict');")
+			//select.zp-select-addrdistrict(id="seachdistrict" name="seachdistrict")

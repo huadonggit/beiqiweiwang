@@ -1,0 +1,31 @@
+//
+   Created by gaojian on 16/3/10.
+    - var rootUrl = ""
+    - var playBtn_News_url = [rootUrl+"report/playBtn_news.png"]
+    - var photoNewsUrl = [rootUrl+"report/photoNews_img0.jpg"]
+    - var photoNewsUrl_small = [rootUrl+"report/photoNews_img1.jpg"]
+    - var photoNewsList = [{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small}]
+.photoNews.clearfix
+    - var item0 = photoNewsList.shift();
+    .leadNews
+        a(href="")
+            .photo
+                #dream-video
+                .playBtn
+                    img&attributes({src: playBtn_News_url})
+            p.title #{item0.title}
+
+    ul.newsList.clearfix
+        each item,index in photoNewsList
+            if(index<2)
+                li.listItem.no_top
+                    a(href="")
+                        .photo
+                            img&attributes({src:item.photoUrl})
+                        p.title #{item.title}
+            else
+                li.listItem
+                    a(href="")
+                        .photo
+                            img&attributes({src: item.photoUrl})
+                        p.title #{item.title}

@@ -1,0 +1,10 @@
+extends layout
+block css
+    link(type='text/css',href='../static/css/model_banner_index.css',rel='stylesheet')
+
+
+block content
+    - var indexBanner = ['../static/img/bq_banner_03.png','../static/img/bq_banner_03.png','../static/img/bq_banner_03.png','../static/img/bq_banner_03.png','../static/img/bq_banner_03.png','../static/img/bq_banner_03.png']
+    include ../model/banner_index.jade
+block script
+    script(src='../static/js/banner_index.js' type='text/javascript')

@@ -1,0 +1,9 @@
+.server-care
+	- for ( var i=0; i<scaretitle.length; i++)
+		.server-care-list.fl
+			.server-care-pic
+				img&attributes({'src': scarepic[i], 'alt': ""})
+			ul.server-care-ul
+				li.server-care-title #{scaretitle[i]}
+				li.server-care-con #{scarecon[i]}
+				li.server-care-red 查看活动

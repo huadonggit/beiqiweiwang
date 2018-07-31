@@ -1,0 +1,51 @@
+extends layout.jade
+
+block leftNav
+
+
+
+	- var leftMVPDetialPic = ['./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png']
+	- var leftCarList = ['MVP系列','SUV系列','交叉型乘用车','3D展厅']
+	- var leftMVPPic = ['./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png']
+	- var leftMVPName = ['威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007']
+	include model/left_nav.jade
+	//include model/left_nav_right.jade
+
+block content
+	include model/top_nav
+
+	- var d_banner1Data = {href1:'javascript:;',href2:'javascript:;',href3:'javascript:;',url:'static/img/server_idea_banner_03.png'}
+	- var d_banner1Text = ['车主服务','服务理念']
+	include model/d_banner1
+
+	//- var mwordheader= '服务理念'
+	//- var mwordheadersuffix = ''
+	//- var mwordsubheader=''
+	//- var mwordheadercon = ['北汽威旺秉承“便捷。诚信、专业、周到”的服务理念，致力于为客户提供贴心、满意的服务，并发布售后服务品牌：','诚 . 服务，同时面向用户承诺“三个一服务”，同时以严格的服务规范，为客户提供关怀。']
+	//include model/word_m306.jade
+	- var mwordheader = '服务理念'
+	- var mwordheadersuffix = ' '
+	- var mwordheadercon = ['北汽威旺秉承“便捷。诚信、专业、周到”的服务理念，致力于为客户提供贴心、满意的服务，并发布售后服务品牌：','诚 . 服务，同时面向用户承诺“三个一服务”，同时以严格的服务规范，为客户提供关怀。']
+	include model/word_m20.jade
+	include model/server_honest.jade
+	include model/m_yi_server
+
+
+	- var mpicwordpic=['static/img/server_rule1.png','static/img/server_rule2.png','static/img/server_rule3.png','static/img/server_rule5.png']
+	- var mpicwordtitle = ['服务接待','维修效率','维修收费','车辆防护']
+	- var mpicwordw = ['提供专人接待，根据客户要求定','修前预估并告知所需时间，确保','维修前、中（追加项目）、后详细解','维修作业使用防护用品，交车时']
+	- var mpicwordword = ['时通报维修进度。','在承诺时间内完成作业。','释维修费用，结账时提供清单。','逐项进行状态确认。']
+	include model/m_pic_word_list_four
+	- var mpicwordpic=['static/img/server_care11.png','static/img/server_care22.png','static/img/server_care33.png']
+	- var mpicwordtitle = ['客户回访','投诉处理','服务监督']
+	- var mpicwordw = ['车辆维修后3-7日内进行100%回访','一般问题1小时内回复','北京汽车24小时服务热线']
+	- var mpicwordword = ['',' 特殊问题24小时内回复','400-800-1888']
+	include model/m_pic_word_list_three
+
+	include model/foot.jade
+
+block script
+	script(src='static/js/model_left_nav.js' type='text/javascript')
+	script(src='static/js/model_top_nav.js' type='text/javascript')
+	script(src='static/js/model_yi_server.js' type='text/javascript')
+	script(src='static/js/model_server_li.js' type='text/javascript')

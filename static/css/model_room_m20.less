@@ -1,0 +1,181 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "yhd";
+
+.m_room{
+  width:91.4%;
+  position: relative;
+  margin:12.9% 2.8% -40% 4.8%;
+  overflow: hidden;
+  ul{
+    margin:0;
+    padding:0;
+  }
+  .m_r_word{
+    display: block;
+    width:40.5%;
+    position: relative;
+    .m_r_title{
+      line-height:35px;
+      text-align: left;
+      font-size: 35px;
+      color: @fontColorDeep;
+      margin-bottom: 8px;
+    }
+    .m_r_space{
+      //width:80%;
+      display: inline;
+      line-height:31px;
+      text-align: left;
+      font-size: 15px;
+      color: #000;
+      padding-bottom: 9px;
+      font-weight:lighter;
+      border-bottom: 1px solid #d1d1d1;
+      i{
+        line-height:31px;
+        text-align: left;
+        font-size: 14px;
+        color: #c71b27;
+        margin-bottom: 5px;
+        margin-left: 25px;
+      }
+    }
+    .m_r_con{
+      margin-top: 12px;
+      line-height:27px;
+      text-align: left;
+      font-size: 15px;
+      vertical-align: top;
+      color: @fontColorDeep;
+      margin-bottom: 49px;
+    }
+  }
+  .m_r_red{
+    .m_r_lighter{
+      line-height:36px;
+      text-align: left;
+      font-size: 27px;
+      vertical-align: top;
+      font-weight:lighter;
+      color: #c71b27;
+    }
+    .m_r_strong{
+      display: inline-block;
+      line-height:36px;
+      text-align: left;
+      font-size: 22px;
+      vertical-align: bottom;
+      color: #c71b27;
+      strong{
+        display: inline-block;
+      }
+      span{
+        display: inline-block;
+        line-height:30px;
+        text-align: left;
+        font-size: 13px;
+        vertical-align: bottom;
+        color: #707070;
+      }
+    }
+    .m_r_gray{
+      width:1px;
+      height:72px;
+      overflow: hidden;
+      margin:auto 48px auto 32px;
+      background: url("@{images}m20_room_gray_03.png") 4px 0 ;
+    }
+  }
+  .m_r_rightcar{
+    width:70.8%;
+    position: relative;
+    left: 29%;
+    top: -240px;
+    margin-bottom: 60%;
+    .m_r_car{
+      width:88.8%;
+      height:auto;
+      img{
+        width:100%;
+        height:auto;
+      }
+    }
+    .m_r_v{
+      margin-left: 3.8%;
+      width:41px;
+      height:0px;
+      border-top: 1px solid @fontColorLight;
+      border-bottom: 1px solid @fontColorLight;
+      background: url("@{imgs}m20_room_v_03.png") repeat-y;
+      .m_r_height{
+        top: 46%;
+        position: relative;
+        left:-20px;
+        width:auto;
+        height:50px;
+        display: block;
+        line-height:50px;
+        text-align: left;
+        font-size: 16px;
+        vertical-align: top;
+        color: @fontColor;
+        background: #fff;
+      }
+    }
+    .m_r_h{
+      clear: both;
+      width:0;
+      height:40px;
+      border-left: 1px solid @fontColorLight;
+      border-right: 1px solid @fontColorLight;
+      background: url("@{imgs}m20_room_h_07.png") repeat-x;
+      .m_r_length{
+        width:92px;
+        margin-left: 50%;
+        position: relative;
+        left:-96px;
+        line-height:50px;
+        text-align: center;
+        font-size: 16px;
+        vertical-align: top;
+        color: @fontColor;
+        padding:0 50px;
+        background: #fff;
+      }
+    }
+  }
+}
+.m_r_three_pic{
+  width:100%;
+  height:auto;
+  position: relative;
+  margin-top: -60%;
+  overflow: hidden;
+  img{
+    width:100%;
+    height:auto;
+  }
+  .m_plat{
+    width:32.753%;
+    position: absolute;
+    margin-left:-100%;
+    height:auto;
+    margin-bottom: 10%;
+  }
+  .m_volume{
+    width:52.608%;
+    position: relative;
+    margin-left:22.866%;
+    opacity:0;
+    height:auto;
+  }
+  .m_chair{
+    width:37.826%;
+    position: absolute;
+    margin-left:200%;
+    height:auto;
+  }
+}

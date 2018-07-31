@@ -1,0 +1,14 @@
+//
+   Created by gaojian on 16/3/16.
+    - var rootUrl = "news/download/"
+    - var imgDataList = [{photoUrl:rootUrl + "imgs/auto_1.jpg"},{photoUrl:rootUrl + "imgs/auto_2.jpg"},{photoUrl:rootUrl + "imgs/auto_3.jpg"},{photoUrl:rootUrl + "imgs/auto_4.jpg"},{photoUrl:rootUrl + "imgs/auto_5.jpg"},{photoUrl:rootUrl + "imgs/auto_6.jpg"},{photoUrl:rootUrl + "imgs/auto_7.jpg"}]
+    - var down_btn = rootUrl + "down_btn.png"
+#box
+    .header 美图鉴赏
+    ul
+        each item,index in imgDataList
+            li
+                img(src=item.photoUrl)
+                a.down_btn.hide(href=item.photoUrl)
+                    img(src=down_btn)
+

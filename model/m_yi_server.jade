@@ -1,0 +1,26 @@
+.m-yi-server-title “三个一”服务
+- var myiservertitle=['一分钟快速接待','一小时快速救援','一天内快速修复']
+- var myiservercontitle=['60秒接待','60分钟救援','24小时修复']
+- var myiservercon=['客户进站后，1分钟内服务人员主动迎接并问候。','从确认客户需要救援开始，单程40KM内，救援人员要在1个小时内到达救援现场。迟到时间在1个小时内，为客户补偿50元，每满1个小服务商为客户最加补偿50元。','在规定的118项维修项目内（详见附件1），承诺自确定维修项目之时起1天（24小时）内修复，如做不到服务商需向客户提供代步车或交通费用补偿（每小时100元）。']
+- var myiserverpic=['static/img/server_yi_server.png','static/img/server_yi_server.png','static/img/server_yi_server.png']
+
+- for (var i=0;i<myiservertitle.length;i++)
+	.m-yi-server-box
+		.m-yi-server-left.fl
+			.m-yi-server-red-box
+				- for (var k=0;k<myiservertitle.length;k++)
+					.m-yi-server-red.fl #{myiservertitle[k]}
+					.m-yi-server-gray.fl
+			.m-yi-server-con-box
+				.m-yi-server-con-title #{myiservercontitle[i]}
+				.m-yi-server-con #{myiservercon[i]}
+		.m-yi-server-right.fr
+			img&attributes({src: myiserverpic[i]})
+		.m-yi-server-arrow
+			span
+				img&attributes({src: 'static/img/server_arrow_0.png'})
+				img&attributes({src: 'static/img/server_arrow_r0.png'})
+			span
+				img&attributes({src: 'static/img/server_arrow_1.png'})
+				img&attributes({src: 'static/img/server_arrow_r1.png'})
+

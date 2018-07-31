@@ -1,0 +1,28 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.four-pic-box{
+  width:100%;
+  //height:auto;
+  overflow: hidden;
+  .pic{
+    width:24.98%;
+    //height:auto;
+    float: left;
+    img{
+      width:100%;
+      height:auto;
+      -webkit-transition: all 2s;
+      -moz-transition: all 2s;
+      -ms-transition: all 2s;
+      -o-transition: all 2s;
+      transition: all 2s;}
+    .big{
+      -webkit-transform:scale(1.5,1.5);
+      -moz-transform:scale(1.5,1.5);
+      -transform:scale(1.5,1.5);
+    }
+  }
+}

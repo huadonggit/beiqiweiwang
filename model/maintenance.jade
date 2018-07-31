@@ -1,0 +1,22 @@
+//
+   Created by gaojian on 16/3/19.
+    - var img_rootUrl = "maintenance/"
+    - var btn_img = img_rootUrl + "l_r_brn.png"
+    - var car_care_table = img_rootUrl + "car_care_table.jpg"
+    - var car_data = [{name:'威旺M20',photoUrl:img_rootUrl+"car_m20.png",title:"威旺M20阶梯式保养项目、费用",detail_img:car_care_table},{name:'威旺M30',photoUrl:img_rootUrl+"car_m30.png",title:"威旺M30阶梯式保养项目、费用",detail_img:car_care_table},{name:'威旺M35',photoUrl:img_rootUrl+"car_m35.png",title:"威旺M35阶梯式保养项目、费用",detail_img:car_care_table}]
+    - var info_data = [{title:"威旺M20阶梯式保养项目、费用",detail_img:car_care_table},{title:"威旺M30阶梯式保养项目、费用",detail_img:car_care_table},{title:"威旺M35阶梯式保养项目、费用",detail_img:car_care_table}]
+#maintenance
+    #maintenance_header
+        pre.prev prev
+        pre.next next
+        ul
+            each it in car_data
+                li(data-title=it.title data-detail_img=it.detail_img)
+                    img(src=it.photoUrl)
+                    div
+                        span #{it.name}
+    .car_care_info#car_care_info
+            .car_care_info_table
+                h1.title#car_care_info_table_title
+                .discrip 机油、机油滤清器、汽油滤清器作为常规保养项目每次均更换，制动、驻车系统、车轮、底盘螺钉扭矩每次作为常规保养项目均检查。根据不同里程执行下列不同更换、检查项目：
+                img#car_care_info_table_img(src= car_care_table)

@@ -1,0 +1,29 @@
+extends layout.jade
+
+block leftNav
+
+
+    include model/left_nav.jade
+block content
+    include model/top_nav
+    - var d_banner1Data = {href1:'javascript:;',href2:'javascript:;',href3:'javascript:;',url:'static/img/buycar_trydrive_banner_03.png'}
+    - var d_banner1Text = ['购车支持','预约试驾']
+    include model/d_banner1
+
+
+
+    include model/buycar_trydrive
+
+    -var proarr = [{'title':'购车流程','url':'index.html','src':'static/img/promotional01.jpg'},{'title':'促销活动','url':'index.html','src':'static/img/promotional02.jpg'}]
+    include model/promotional
+    include model/foot.jade
+
+block script
+    script(src='static/js/model_left_nav.js' type='text/javascript')
+    script(src='static/js/model_top_nav.js' type='text/javascript')
+    script(src='static/js/time_jquery.js' type='text/javascript')
+    script(src='static/js/select_trydrive.js' type='text/javascript')
+    script(src='static/js/start_trydrive.js' type='text/javascript')
+    script(src='static/js/model_buycar_li.js' type='text/javascript')
+    link(rel="stylesheet" href="static/css/jquery-ui.min.css")
+    script(src="static/js/jquery-ui.min.js")

@@ -1,0 +1,10 @@
+.index-banner
+   .index-banner-box
+      - for (var i=0;i<indexBanner.length;i++)
+         img&attributes({'src':indexBanner[i]})
+      .index-banner-circle-box
+         .index-banner-circle-box-in
+   .index-banner-left
+      img(src="static/img/index_arrow_0.png" width="36px" height="64px")
+   .index-banner-right
+      img(src="static/img/index_arrow_1.png" width="36px" height="64px")

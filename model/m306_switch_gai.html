@@ -1,0 +1,32 @@
+
+<div class="m_switch_306">
+  <div class="m_switch_img"><img src="static/img/m306_red.png"/><img src="static/img/m306_green.png"/><img src="static/img/m306_golden.png"/><img src="static/img/m306_silver.png"/><img src="static/img/m306_white.png"/><img src="static/img/m306_brown.png"/>
+  </div>
+  <div class="m306-banner-left"><img src="static/img/m306_arrow_0.png" width="36px" height="64px"/></div>
+  <div class="m306-banner-right"><img src="static/img/m306_arrow_1.png" width="36px" height="64px"/></div>
+  <div class="m_switch_square_box">
+    <div class="m_switch_square m_switch_red"></div>
+    <div class="m_switch_square m_switch_green"></div>
+    <div class="m_switch_square m_switch_golden"></div>
+    <div class="m_switch_square m_switch_silvery"></div>
+    <div class="m_switch_square m_switch_white"></div>
+    <div class="m_switch_square m_switch_brown"></div>
+  </div>
+</div>
+<!--script(type="text/javascript" href='static/js/m306_switch.js').-->
+<script type="text/javascript">
+  $(function () {
+  	$('.m_switch_img').find('img:first').show();
+  	$('.m_switch_square').each(function (i) {
+  		$(this).click(function () {
+  			$('.m_switch_img').find('img').hide().eq(i).show();
+  		});
+  	});
+  	$('.m306-banner-right').click(function(){
+  		$('.m_switch_img').find('img:visible').next().show().siblings().hide();
+  	});
+  	$('.m306-banner-left').click(function(){
+  		$('.m_switch_img').find('img:visible').prev().show().siblings().hide();
+  	});
+  });
+</script>

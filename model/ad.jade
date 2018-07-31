@@ -1,0 +1,9 @@
+.ad
+	-var adarr = {'src':'./static/img/ad.jpg','title':'经销商招募','phone':'18513517084','tel':'010-57149623'};
+	.ad-pic
+		img&attributes({'src':adarr.src,'title':'','width':'1320','height':'282'})
+	.ad-content
+		.ad-title #{adarr.title}
+		.ad-contact
+			a.phone&attributes({'href':'tel:'+adarr.phone,'title':''}) #{adarr.phone}
+			a.tel&attributes({'href':'tel:'+adarr.tel,'title':''}) #{adarr.tel}

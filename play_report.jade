@@ -1,0 +1,50 @@
+extends layout.jade
+
+block css
+    link(type='text/css',href="./static/css/report.css",rel="styleSheet")
+    link(type='text/css',href="./static/css/news.css",rel="styleSheet")
+    script(src='statics/js/jquery.js' type='text/javascript')
+    script(src='statics/jwplayer/jwplayer.js' type='text/javascript')
+
+block leftNav
+
+
+
+    - var leftMVPDetialPic = ['./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png']
+    - var leftCarList = ['MVP系列','SUV系列','交叉型乘用车','3D展厅']
+    - var leftMVPPic = ['./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png']
+    - var leftMVPName = ['威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007']
+    include model/left_nav
+    //include model/left_nav_right.jade
+
+block content
+    include model/top_nav
+    - var d_banner1Data = {href1:'javascript:;',href2:'javascript:;',href3:'javascript:;',url:'static/img/img_news_banner.jpg'}
+    - var d_banner1Text = ['品牌活动','媒体报道']
+    include model/d_banner1
+
+    - var photo_rootUrl = "static/img/"
+    - var playBtn_News_url = [photo_rootUrl+"playBtn_news.png"]
+    - var photoNewsUrl = [photo_rootUrl+"photoNews_img0.jpg"]
+    - var photoNewsUrl_small = [photo_rootUrl+"photoNews_img1.jpg"]
+    - var photoNewsList = [{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small},{title:'威旺吹响集结号 首届"威旺梦" 文化节总决赛圆满谢幕',photoUrl:photoNewsUrl_small}]
+    include model/photoNews
+
+    - var newsInMonth_rootUrl = ""
+    - var newsInMonth_news_titleImg = [newsInMonth_rootUrl+"static/img/img_news_titleImg.jpg"]
+    - var newsInMonth_news_icon_clock = [newsInMonth_rootUrl+"static/img/news_icon_clock.png"]
+    - var newsInMonth_newsItem = {a_news_title:"北汽威旺乘用车战略升级 全新MPV年内将上市",newsDate:"20160309",newsSummary:"北京汽车工业设计2.0时代的扛鼎之作——绅宝X55，在有着“活力都市”之称的海南三亚正式上市。新车搭载了当下最流行的黄金动力组合，1.5L和1.5T两款发动机配备CVT/6MT/5MT三种变速箱，共8款车型可选。"}
+    include model/newsInMonth
+    include model/lpages
+
+    include model/foot.jade
+
+
+block script
+    script(src='static/js/model_left_nav.js' type='text/javascript')
+    script(src='static/js/model_top_nav.js' type='text/javascript')
+    script(src='static/js/banner_index.js' type='text/javascript')
+    script(src='static/js/model_four_pic_index.js' type='text/javascript')
+    script(src='static/js/model_brand_activity.js' type='text/javascript')
+    script(src='static/js/model_activities_li.js' type='text/javascript')
+    script(src='static/js/dream_video.js' type='text/javascript')

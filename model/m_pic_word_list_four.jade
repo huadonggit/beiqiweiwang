@@ -1,0 +1,9 @@
+.m-pic-word-list-title 服务规范
+.m-pic-word-list-four
+	- for (var i=0;i<mpicwordpic.length;i++)
+		.m-pic-wordpic.fl
+			img&attributes({src:mpicwordpic[i]})
+			ul.m-pic-word-ul
+				li.m-pic-word-title #{mpicwordtitle[i]}
+				li.m-pic-word-word #{mpicwordw[i]}
+				li.m-pic-word-word #{mpicwordword[i]}

@@ -1,0 +1,27 @@
+
+<div class="d_video2">
+  <div class="d_opa"></div>
+  <div class="d_part">
+    <div id="d_video">
+      <div class="d_btn"><img src="static/img/d_icon10-13.png"/></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function(){
+  	var videosrc = "http://emm.zhengbang.com.cn/s/videos_smail/v/4A+1280x720-1.mp4";  //视频路径
+  	var imgsrc = "http://emm.zhengbang.com.cn/s/videos_smail/v/4A+1280x720-1.mp4";  //图片路径
+  	var thevideo;
+  
+  	jwplayer('d_video').setup({
+  		flashplayer: "static/jwplayer/jwplayer.flash.swf",    //调用播放器
+  		file: videosrc,   //调用视频文件
+  		width: "100%",  //播放器宽
+  		height: "100%",  //播放器高
+  		image: imgsrc,  //视频预览图片
+  		controlbar: "over",  //控制条位置
+  		repeat: false,   //重复播放
+  		autostart: false   //自动播放
+  	})
+  })
+</script>

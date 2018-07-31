@@ -1,0 +1,108 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "yhd";
+
+.m-yi-server-title{
+  margin:7.608% auto 5.724% 0;
+  line-height:37px;
+  text-align: center;
+  font-size: 37px;
+  color: @fontColorDeep;
+
+}
+.m-yi-server-box{
+  width:86%;
+  overflow: hidden;
+  padding:0 6.01% 0% 7.101%;
+  display: none;
+  position: relative;
+  margin:0 auto;
+  .m-yi-server-left{
+    width:52.898%;
+    //width:46.898%;
+    height:auto;
+    .m-yi-server-red-box{
+      width:100%;
+      //overflow: hidden;
+      margin-bottom: 18.702%;
+      .m-yi-server-red{
+        //width:33.2%;
+        height:17px;
+        display: inline-block;
+        line-height:17px;
+        text-align: left;
+        font-size: 17px;
+        color: @fontColor;
+        //margin-bottom: 27.702%;
+      }
+      .m-yi-server-gray{
+        width:1px;
+        margin:0 5.92%;
+        height:17px;
+        background: #ccc;
+        overflow: hidden;
+      }
+      .m-yi-server-red:hover{
+        color: #9d1b12;
+      }
+    }
+    .m-yi-server-con-box{
+      width:92.46%;
+      clear: both;
+      .m-yi-server-con-title{
+        line-height:30px;
+        text-align: left;
+        font-size: 30px;
+        color: @fontColorDeep;
+        margin-bottom: 6.32%;
+      }
+      .m-yi-server-con{
+        line-height:30px;
+        text-align: left;
+        font-size: 12px;
+        color: @fontColor;
+        //margin-bottom: 11.26%;
+      }
+    }
+  }
+  .m-yi-server-arrow{
+    width:100%;
+    position: absolute;
+    //margin-top: 2%;
+    bottom: 2.1%;
+    left: 7.101%;//margin-top: 2%;
+    //margin-bottom: 0;
+    //margin-left: 0;
+    //height:32px;
+    overflow: hidden;
+    span{
+      width:18px;
+      display: inline-block;
+      cursor: pointer;
+      //line-height:32px;
+      //text-align: left;
+      //font-size: 45px;
+      //color: #7c7c7c;
+      //margin-bottom: 11.26%;
+      vertical-align: middle;
+      margin-right: 25px;
+      img{
+        width:100%;
+      }
+    }
+    span:hover{
+      color: #9d1c13;
+      //font-size: 40px;
+      //line-height:32px;
+      //vertical-align: middle;
+    }
+  }
+  .m-yi-server-right{
+    width:41.449%;
+    img{
+      width:100%;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+extends ltab.jade
+block taboptions
+	- var length = optiontext.length
+	- var classStr= "tab"+length
+	ul&attributes({'class': classStr})
+		-for(var i =0;i<optiontext.length;i++)
+			li
+				a(href="javascript:void(0);",title='') #{optiontext[i]}
+
+block tablists
+	.tablist
+		.lcontainer
+			block top_nav_advice
+				include form_top_nav_advice
+	.tablist
+		.lcontainer
+			block top_nav_advice_two
+				include form_top_nav_advice-two

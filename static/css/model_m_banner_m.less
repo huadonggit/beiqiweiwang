@@ -1,0 +1,57 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "yhd";
+
+.m_banner{
+  img{
+    width:100%;
+  }
+}
+.m_banner_gray{
+  width:93.8%;
+  height:148px;
+  margin:0 3% -74px 3%;
+  position: relative;
+  top:-74px;
+  background: url('@{images}banner_gray_03.png') repeat-x;
+  .m_banner_list{
+    width:24.9%;
+    height:59px;
+    float: left;
+    text-align: center;
+    margin-top: 45px;
+    border-right: 1px solid #bbb;
+    span{
+      height:59px;
+      display: inline-block;
+      line-height:59px;
+      text-align: left;
+      font-size: 54px;
+      color: #fff;
+    }
+    .m_list.floor{
+      ul{
+        margin:0;
+        padding:0;
+        margin-left: 20px;
+        .m_list.floor.up{
+          position: relative;
+          top:6px;
+        }
+        li{
+          margin:0;
+          padding:0;
+          list-style-type: none;
+          line-height:27px;
+          text-align: left;
+          font-size: 15px;
+          color: #f6f6f6;
+          //vertical-align: bottom;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.campaign{
+  margin: 60px 30px 120px;
+  min-width: 1040px;
+  .campaign-pic{
+    position: relative;
+    img{
+      display: block;
+      width: 76%;
+    }
+    .campaign-content{
+      position: absolute;
+      top:60px;
+      right: 0;
+      background: #eee;
+      width: 30.68%;
+      min-width: 405px;
+      height:100%;
+      min-height: 462px;
+      font-size: 16px;
+      .campaign-title{
+        font-size: 24px;
+        margin:38px 40px 20px;
+        line-height: 36px;
+        padding: 0;
+        font-weight:normal;
+        color:#333;
+      }
+      .campaign-time{
+        padding-left: 25px;
+        margin:0 40px 30px;
+        background: url('@{images}/icon-time.png') left center no-repeat;
+      }
+      .campaign-txt{
+        margin: 0 40px;
+        line-height: 2.1428em;
+        overflow: hidden;
+        height: 10.714em;
+      }
+      a{
+        position: absolute;
+        bottom:45px;
+        left: 40px;
+        color:#9d1b12;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      .stauts{
+        position: absolute;
+        left: 0;
+        top:0;
+        width:75px;
+        height: 75px;
+      }
+      .stauts.start{
+        background: url("@{images}/icon-ing.png") left top no-repeat;
+      }
+      .stauts.end{
+        background: url("@{images}/icon-end.png") left top no-repeat;
+      }
+    }
+  }
+}
+.campaign.campaign-right{
+  .campaign-pic{
+    img{
+      margin-left: 24%;
+      *margin-left: 23.9%;
+    }
+    .campaign-content{
+      right: auto;
+      left: 0;
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .campaign{
+    .campaign-pic{
+      .campaign-content{
+        min-height: 380px;
+        .campaign-txt{
+          height: 6.428em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.m_switch_306
+	.m_switch_img
+		- var switchimg = ['static/img/m306_red.png','static/img/m306_green.png','static/img/m306_golden.png','static/img/m306_silver.png','static/img/m306_white.png','static/img/m306_brown.png']
+		- for (var i=0;i<switchimg.length;i++)
+			img&attributes({'src': switchimg[i]})
+	.m306-banner-left
+		img(src="static/img/m306_arrow_0.png" width="36px" height="64px")
+	.m306-banner-right
+		img(src="static/img/m306_arrow_1.png" width="36px" height="64px")
+	.m_switch_square_box
+		.m_switch_square.m_switch_red
+		.m_switch_square.m_switch_green
+		.m_switch_square.m_switch_golden
+		.m_switch_square.m_switch_silvery
+		.m_switch_square.m_switch_white
+		.m_switch_square.m_switch_brown
+
+
+block script
+	//script(type="text/javascript" href='static/js/m306_switch.js').
+	script(type="text/javascript" ).
+		$(function () {
+			$('.m_switch_img').find('img:first').show();
+			$('.m_switch_square').each(function (i) {
+				$(this).click(function () {
+					$('.m_switch_img').find('img').hide().eq(i).show();
+				});
+			});
+			$('.m306-banner-right').click(function(){
+				$('.m_switch_img').find('img:visible').next().show().siblings().hide();
+			});
+			$('.m306-banner-left').click(function(){
+				$('.m_switch_img').find('img:visible').prev().show().siblings().hide();
+			});
+		});

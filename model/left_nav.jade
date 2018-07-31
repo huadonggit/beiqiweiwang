@@ -1,0 +1,220 @@
+.left-nav
+    .video_download_gray
+        .video_center_box
+            .video_center
+                .video_close
+                    img&attributes({'src': 'static/img/video-close.png'})
+                #video_list
+    .l-logo
+        img(src="./static/img/bq_logo.png",alt="",width='155',height='108')
+    .l-list
+        ul
+            li.l-li
+                a.l-block(href="#",onFocus="blur();",title="")
+                    .l-red.fl
+                    img.l-red-img.l-spic(src="static/img/bq_r_house.png",alt="", width = '31', height = '24')
+                    img.l-gray-img.l-spic(src="static/img/bq_g_house.png",alt="",width='31',height='24')
+                    span.l-name 首页
+            li.l-li
+                a.l-block(href="#",onFocus="blur();",title="")
+                    .l-red.fl
+                    img.l-red-img.l-spic(src="static/img/bq_r_car.png",alt="", width = '31', height = '24')
+                    img.l-gray-img.l-spic(src="static/img/bq_g_car.png",alt="",width='31',height='24')
+                    span.l-name 所有车型
+                .l-car
+                    .l-car-nav
+                        span MVP系列
+                        span SUV系列
+                        span 交叉型乘用车
+                        span 3D展厅
+                    - var detailMvpPic = ['./static/img/left_nav_306_car_03.png','./static/img/bq_left_detail_03.png','./static/img/left_nav_306_car_03.png','./static/img/left_nav_306_car_03.png','./static/img/left_nav_306_car_03.png','./static/img/left_nav_306_car_03.png','./static/img/left_nav_306_car_03.png','./static/img/left_nav_306_car_03.png']
+                    - var detailSuvPic = ['./static/img/left_nav_m20_car_03.png','./static/img/bq_left_detail_03.png','./static/img/left_nav_m20_car_03.png','./static/img/left_nav_m20_car_03.png','./static/img/left_nav_m20_car_03.png','./static/img/left_nav_m20_car_03.png','./static/img/left_nav_m20_car_03.png','./static/img/left_nav_m20_car_03.png']
+                    - var detailXPic = ['./static/img/left_nav_m30_car_03.png','./static/img/bq_left_detail_03.png','./static/img/left_nav_m30_car_03.png','./static/img/left_nav_m30_car_03.png','./static/img/left_nav_m30_car_03.png','./static/img/left_nav_m30_car_03.png','./static/img/left_nav_m30_car_03.png','./static/img/left_nav_m30_car_03.png']
+                    - var detailDPic = ['./static/img/left_nav_m35_car_03.png.png','./static/img/bq_left_detail_03.png','./static/img/bq_left_detail_03.png','./static/img/bq_left_detail_03.png','./static/img/bq_left_detail_03.png','./static/img/left_nav_m35_car_03.png','./static/img/left_nav_m35_car_03.png','./static/img/left_nav_m35_car_03.png']
+                    .l-car-detail.l-car-detail-mvp
+                        - for (var i=0; i<detailMvpPic.length;i++)
+                            .l-car-detail-con
+                                .l-car-detail-pic
+                                    img(src="./static/img/bq_left_detail_03.png",alt="")
+                                ul
+                                    li.l-car-title 北汽威旺M20
+                                    li.l-car-price
+                                        | 官方指导价
+                                        span
+                                            strong ￥599，000~￥939，000
+                                    li.l-car-con 舒适安逸，乐享驾乘
+                                    li.l-car-con 潮流动感，超凡时尚
+                                    li.l-car-con 激扬动力，从轻驾驭
+                    .l-car-detail.l-car-detail-suv
+                        - for (var i=0; i<detailSuvPic.length;i++)
+                            .l-car-detail-con
+                                .l-car-detail-pic
+                                    img(src="./static/img/bq_left_detail_03.png",alt="")
+                                ul
+                                    li.l-car-title 北汽威旺M30
+                                    li.l-car-price
+                                        | 官方指导价
+                                        span
+                                            strong ￥599，000~￥939，000
+                                    li.l-car-con 舒适安逸，乐享驾乘
+                                    li.l-car-con 潮流动感，超凡时尚
+                                    li.l-car-con 激扬动力，从轻驾驭
+                    .l-car-detail.l-car-detail-x
+                        - for (var i=0; i<detailXPic.length;i++)
+                            .l-car-detail-con
+                                .l-car-detail-pic
+                                    img(src="./static/img/bq_left_detail_03.png",alt="")
+                                ul
+                                    li.l-car-title 北汽威旺M305
+                                    li.l-car-price
+                                        | 官方指导价
+                                        span
+                                            strong ￥599，000~￥939，000
+                                    li.l-car-con 舒适安逸，乐享驾乘
+                                    li.l-car-con 潮流动感，超凡时尚
+                                    li.l-car-con 激扬动力，从轻驾驭
+                    .l-car-detail.l-car-detail-d
+                        - for (var i=0; i<detailDPic.length;i++)
+                            .l-car-detail-con
+                                .l-car-detail-pic
+                                    img(src="./static/img/bq_left_detail_03.png",alt="")
+                                ul
+                                    li.l-car-title 北汽威旺MVP
+                                    li.l-car-price
+                                        | 官方指导价
+                                        span
+                                            strong ￥599，000~￥939，000
+                                    li.l-car-con 舒适安逸，乐享驾乘
+                                    li.l-car-con 潮流动感，超凡时尚
+                                    li.l-car-con 激扬动力，从轻驾驭
+                    - var leftMvpPic = ['./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png']
+                    - var leftSuvPic = ['./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png']
+                    - var leftXPic = ['./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png']
+                    - var leftDPic = ['./static/img/3dzhangting_03.png','./static/img/3dzhangting_05.png','./static/img/3dzhangting_07.png','./static/img/3dzhangting_13.png']
+                    // - var leftDPic = ['./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png']
+                    - var leftMvpName = ['威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007']
+                    - var leftSuvName = ['威旺222','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007']
+                    - var leftXName = ['威旺333','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007']
+                    - var leftDName = ['威旺444','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007']
+                    .l-car-pic-box.l-car-pic-box-mvp
+                        - for (var i=0; i<leftMvpPic.length;i++)
+                            .l-car-pic
+                                .l-car-pic-uppic
+                                    img(src="#{leftMvpPic[i]}",alt="")
+                                .l-car-pic-word #{leftMvpName[i]}
+                                .l-car-drive
+                                    a.fl(href='#')
+                                        img.l-car-d(src="./static/img/bq_left_right_drive_03.png",alt="")
+                                        span 预约试驾
+                                    .l-car-g.fl
+                                    a.fl(href='#')
+                                        img.l-car-d(src="./static/img/bq_left_right_drive_05.png",alt="")
+                                        span 经销商查询
+                    .l-car-pic-box.l-car-pic-box-suv
+                        - for (var i=0; i<leftSuvPic.length;i++)
+                            .l-car-pic
+                                .l-car-pic-uppic
+                                    img(src="#{leftSuvPic[i]}",alt="")
+                                .l-car-pic-word #{leftSuvName[i]}
+                                .l-car-drive
+                                    a.fl(href='#')
+                                        img.l-car-d(src="./static/img/bq_left_right_drive_03.png",alt="")
+                                        span 预约试驾
+                                    .l-car-g.fl
+                                    a.fl(href='#')
+                                        img.l-car-d(src="./static/img/bq_left_right_drive_05.png",alt="")
+                                        span 经销商查询
+                    .l-car-pic-box.l-car-pic-box-x
+                        - for (var i=0; i<leftXPic.length;i++)
+                            .l-car-pic
+                                .l-car-pic-uppic
+                                    img(src="#{leftXPic[i]}",alt="")
+                                .l-car-pic-word #{leftXName[i]}
+                                .l-car-drive
+                                    a.fl(href='#')
+                                        img.l-car-d(src="./static/img/bq_left_right_drive_03.png",alt="")
+                                        span 预约试驾
+                                    .l-car-g.fl
+                                    a.fl(href='#')
+                                        img.l-car-d(src="./static/img/bq_left_right_drive_05.png",alt="")
+                                        span 经销商查询
+                    .l-car-pic-box.l-car-pic-box-d
+                        - for (var i=0; i<leftDPic.length;i++)
+                            .l-car-pic
+                                .l-car-pic-uppic
+                                    img(src="#{leftDPic[i]}",alt="",style="margin-top:54px")
+            li.l-li
+                a.l-block(href="#",onFocus="blur();",title="")
+                    .l-red.fl
+                    img.l-red-img.l-spic(src="static/img/bq_r_hand.png",alt="", width = '31', height = '24')
+                    img.l-gray-img.l-spic(src="static/img/bq_g_hand.png",alt="",width='31',height='24')
+                    span.l-name 购车支持
+                .l-buy-car
+                    ul.l-buy-car-list
+                        //li.l-buy-list
+                        //    a(href="#") 购车支持
+                        li
+                            a(href="#") 经销商查询
+                        li
+                            a(href="#") 预约试驾
+                        li
+                            a(href="#") 促销活动
+                        li
+                            a(href="#") 在线订车
+                        li
+                            a(href="#") 大客户服务
+            li.l-li
+                a.l-block(href="#",onFocus="blur();",title="")
+                    .l-red.fl
+                    img.l-red-img.l-spic(src="static/img/bq_r_heart.png",alt="", width = '31', height = '24')
+                    img.l-gray-img.l-spic(src="static/img/bq_g_heart.png",alt="",width='31',height='24')
+                    span.l-name 车主服务
+                .l-buy-car
+                    ul.l-buy-car-list
+                        //li.l-buy-list
+                        //    a(href="#") 车主服务
+                        //li
+                        //    a(href="#") 车主关怀
+                        li
+                            a(href="#") 服务理念
+                        li
+                            a(href="#") 预约维保
+                        li
+                            a(href="#") 车主关怀
+            li.l-li
+                a.l-block(href="#",onFocus="blur();",title="")
+                    .l-red.fl
+                    img.l-red-img.l-spic(src="static/img/bq_r_inf.png",alt="", width = '31', height = '24')
+                    img.l-gray-img.l-spic(src="static/img/bq_g_inf.png",alt="",width='31',height='24')
+                    span.l-name 品牌活动
+                .l-buy-car
+                    ul.l-buy-car-list
+                        //li.l-buy-list
+                        //    a(href="#") 品牌活动
+                        li
+                            a(href="#") 新闻中心
+                        li
+                            a(href="#") 媒体报道
+                        li
+                            a(href="#") 活动专题
+                        li
+                            a(href="#") 多媒体下载
+            li.l-li
+                a.l-block(href="#",onFocus="blur();",title="")
+                    .l-red.fl
+                    img.l-red-img.l-spic(src="static/img/bq_r_help.png",alt="", width = '31', height = '24')
+                    img.l-gray-img.l-spic(src="static/img/bq_g_help.png",alt="",width='31',height='24')
+                    span.l-name 认识威旺
+                .l-buy-car
+                    ul.l-buy-car-list
+                        //li.l-buy-list
+                        //    a(href="#") 认识威旺
+                        li
+                            a(href="#") 品牌文化
+                        li
+                            a(href="#") 品牌历程
+                        li
+                            a(href="#") 公益事业
+                        li
+                            a(href="#") 人才计划
+

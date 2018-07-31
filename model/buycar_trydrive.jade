@@ -1,0 +1,68 @@
+
+form(name='trydriveform')
+    .buycar-trydrive-word-up
+        p.t-n-red 请填写您的个人信息:
+            span.t-n-gray *为必填项。您的信息，我们将会完全保密，请您放心填写。
+    .buycar-trydrive-advice
+        .t-n-list-box
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 姓名
+                input.t-n-name(type="text" name="name" placeholder='')
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 手机
+                input.t-n-phone(type="text" name="phone")
+                label.lable-email-width(for="")
+                    | E-mail
+                input.t-n-e(type="text" name="email")
+    .buycar-trydrive-word-up
+        p.t-n-red 请选择车辆
+    .buycar-trydrive-advice
+        .t-n-list-box
+            .t-n-list
+                label.label-left.fl(for="")
+                    span.star *
+                    | 车系/车型
+                select(class="form-car-serise select-trydrive-serise" value="" placeholder="" name="" id="")
+                    option(value="") 车系
+                    option(value="") 车系
+                    option(value="") 车系
+                select(class="form-car-model select-trydrive-model" value="" placeholder="" name="" id="")
+                    option(value="") 车型
+                    option(value="") 车型
+                    option(value="") 车型
+            .t-n-list
+                label.label-left.fl(for="")
+                    span.star *
+                    | 经销商
+                select(class="form-repair-city select-trydrive-city" value="" placeholder="" name="" id="")
+                    option(value="") 城市1
+                    option(value="") 城市2
+                    option(value="") 城市3
+                select(class="form-repair-area select-trydrive-area" value="" placeholder="" name="" id="")
+                    option(value="") 地区4
+                    option(value="") 地区5
+                    option(value="") 地区6
+                select(class="form-repair-people select-trydrive-people" value="" placeholder="" name="" id="")
+                    option(value="") 经销商7
+                    option(value="") 经销商8
+                    option(value="") 经销商9
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 计划试车时间
+                input.t-n-try-time(type="text" name="name" placeholder='选择时间' class="datepicker")
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 计划购车时间
+                input.t-n-buy-time(type="text" name="phone" placeholder='选择时间' class="datepicker")
+            .t-n-list
+                label.label-left(for="")
+                    | 其他说明
+                textarea.t-n-con(name="con" )
+        .submit-box
+            input.zp-submit(type="submit" value='提交')

@@ -1,0 +1,56 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.lpages{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 80px;
+  .outer{
+    &:extend(.clearfix all);
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    a{
+      display: block;
+      text-decoration: none;
+    }
+    .prepage{
+      float: left;
+      margin-top: 5px;
+      width: 30px;
+      height: 13px;
+      background: url("@{images}lpage01.png") no-repeat center ;
+    }
+    .nextpage{
+      float: left;
+      margin-top: 5px;
+      width: 30px;
+      height: 13px;
+      background: url("@{images}lpage02.png") no-repeat center ;
+    }
+    ul{
+      float: left;
+      &:extend(.clearfix all);
+      li{
+        margin: 0 8px;
+        float: left;
+        a{
+          line-height: 22px;
+          color: #666666;
+          font-size: 0.857em;
+          padding: 0 7px;
+        }
+        a:hover{
+          color: #9d1b12;
+          background: #eeeeee;
+        }
+        a.active{
+          color: #9d1b12;
+          background: #eeeeee;
+        }
+      }
+    }
+  }
+}

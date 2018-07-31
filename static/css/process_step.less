@@ -1,0 +1,140 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.process-step{
+  &:extend(.clearfix all);
+  .process-pic{
+    .fl;
+    width:50%;
+    *width:49.9%;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .process-info{
+    .fl;
+    width: 50%;
+    h4,p{
+      margin: 0 25px;
+      padding:0;
+    }
+    .process-num{
+      font-size: 14px;
+      font-weight:bold;
+      text-align: right;
+      margin-top: 28px;
+      color:#333;
+    }
+    .process-icon{
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin-bottom: 45px;
+      background: url("@{images}/icon-step01.png") center no-repeat;
+    }
+    .process-title{
+      font-size: 24px;
+      color:#333;
+      font-weight:normal;
+      margin-bottom: 10px;
+    }
+    .process-content{
+      font-size: 16px;
+      line-height: 28px;
+      color:#666;
+    }
+  }
+}
+.step-right{
+  .process-pic{
+    .fr;
+  }
+  .process-info{
+    float:none;
+  }
+}
+.step01{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step01.png");
+    }
+  }
+}
+.step02{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step02.png");
+    }
+  }
+}
+.step03{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step03.png");
+    }
+  }
+}
+.step04{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step04.png");
+    }
+  }
+}
+.step05{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step05.png");
+    }
+  }
+}
+.step06{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step06.png");
+    }
+  }
+}
+.step07{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step07.png");
+    }
+  }
+}
+.step08{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step08.png");
+    }
+  }
+}
+.step09{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step09.png");
+    }
+  }
+}
+.step10{
+  .process-info{
+    .process-icon{
+      background-image: url("@{images}/icon-step10.png");
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  .process-step{
+    .process-info{
+      .process-icon{
+        display: none;
+      }
+      .process-content{
+        line-height: 24px;
+      }
+    }
+  }
+}

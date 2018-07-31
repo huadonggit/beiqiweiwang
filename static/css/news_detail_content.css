@@ -1,0 +1,130 @@
+.news_detail_content {
+  margin: 4% 9.42% 0%;
+}
+.news_detail_content a {
+  text-decoration: none;
+}
+.news_detail_content .title {
+  margin-bottom: 4%;
+}
+.news_detail_content .title h2 {
+  font-size: 2em;
+  text-align: center;
+}
+.news_detail_content .title .state {
+  text-align: center;
+  vertical-align: bottom;
+}
+.news_detail_content .title .state span {
+  position: relative;
+  top: 2px;
+  padding-right: 3em;
+  padding-left: 0.8em;
+}
+.news_detail_content .title .state span.print a {
+  color: #9d1b12;
+}
+.news_detail_content .content {
+  border-top: #f6f6f6 solid 1px;
+  border-bottom: #f6f6f6 solid 1px;
+  padding-top: 2%;
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  text-align: left;
+}
+.news_detail_content .content img {
+  width: 100%;
+  padding: 1em 0em;
+}
+.news_detail_content .content .share {
+  text-align: center;
+  padding: 6% 0% 6% 0%;
+  vertical-align: top;
+}
+.news_detail_content .content .share .share_title {
+  float: left;
+  width: 10%;
+  margin-left: 28%;
+}
+.news_detail_content .content .share .share_title img {
+  width: 1.5em;
+  padding: 0em 0em;
+}
+.news_detail_content .content .share .share_title span {
+  font-size: 1.5em;
+  position: relative;
+  top: 6px;
+}
+.news_detail_content .content .share .jiathis_style_32x32 {
+  margin-right: 39%;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+}
+.news_detail_content .content .share .jiathis_style_32x32 a.jiathis_button_tsina .jiathis_txt.jtico.jtico_tsina {
+  background: #ffff00 url("../img/icon_weibo.png") no-repeat left top;
+  background-size: 100% 100%;
+  margin-right: 5px;
+}
+.news_detail_content .content .share .jiathis_style_32x32 a.jiathis_button_weixin .jiathis_txt.jtico.jtico_weixin {
+  background: #ffff00 url("../img/icon_weixin.png") no-repeat left top;
+  background-size: 100% 100%;
+  margin-right: 5px;
+}
+.news_detail_content .content .share .jiathis_style_32x32 a.jiathis_button_tqq .jiathis_txt.jtico.jtico_tqq {
+  background: #ffff00 url("../img/icon_qqWeibo.png") no-repeat left top;
+  background-size: 100% 100%;
+  margin-right: 5px;
+}
+.news_detail_content .content .share .jiathis_style_32x32 a.jiathis_button_douban .jiathis_txt.jtico.jtico_douban {
+  background: #ffff00 url("../img/icon_douban.png") no-repeat left top;
+  background-size: 100% 100%;
+  margin-right: 5px;
+}
+.news_detail_content .content .share .jiathis_style_32x32 a.jiathis_button_qzone .jiathis_txt.jtico.jtico_qzone {
+  background: #ffff00 url("../img/icon_qzon.png") no-repeat left top;
+  background-size: 100% 100%;
+  margin-right: 5px;
+}
+.news_detail_content .news_foot {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.news_detail_content .news_foot a {
+  display: inline-block;
+  border: #ffcccc solid 1px;
+  color: #9d1b12;
+  padding: 0.5em 2em;
+  outline: none;
+}
+.news_detail_content .news_foot .prev_news {
+  float: left;
+}
+.news_detail_content .news_foot .prev_news a {
+  margin-right: 1em;
+}
+.news_detail_content .news_foot .prev_news span {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 22em;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+}
+.news_detail_content .news_foot .next_news {
+  float: right;
+}
+.news_detail_content .news_foot .next_news a {
+  margin-left: 1em;
+}
+.news_detail_content .news_foot .next_news span {
+  display: inline-block;
+  width: 22em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: right;
+}

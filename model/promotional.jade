@@ -1,0 +1,10 @@
+.promotional
+	//	-var proarr = [{'title':'购车流程','url':'index.html','src':'../static/img/promotional01.jpg'},{'title':'促销活动','url':'index.html','src':'../static/img/promotional02.jpg'}]
+	ul
+		-each item in proarr
+			li
+				a&attributes({'href':item.url,'title':''})
+					.promotional-pic
+						img&attributes({'src': item.src, 'title': '', 'width': '1320', 'height': '282'})
+					.promotional-content  #{item.title}
+						span

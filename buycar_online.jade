@@ -1,0 +1,26 @@
+extends layout.jade
+
+block leftNav
+
+
+    include model/left_nav.jade
+block content
+    include model/top_nav
+    - var d_banner1Data = {href1:'javascript:;',href2:'javascript:;',href3:'javascript:;',url:'static/img/buycar_online_banner_03.png'}
+    - var d_banner1Text = ['购车支持','在线订车']
+    include model/d_banner1
+
+
+
+    include model/buycar_online
+    -var d_partboxData={url1:'static/img/promotional01.jpg',url2:'static/img/promotional02.jpg',href1:'javascript:;',href2:'javascript:;',href3:'javascript:;',href4:'javascript:;'}
+    //    -var proarr = [{'title':'购车流程','url':'index.html','src':'static/img/promotional01.jpg'},{'title':'促销活动','url':'index.html','src':'static/img/promotional02.jpg'}]
+    include model/d_down_part
+    include model/foot.jade
+
+block script
+    script(src='static/js/model_left_nav.js' type='text/javascript')
+    script(src='static/js/model_top_nav.js' type='text/javascript')
+    script(src='static/js/select_online.js' type='text/javascript')
+    script(src='static/js/start_online.js' type='text/javascript')
+    script(src='static/js/model_buycar_li.js' type='text/javascript')

@@ -1,0 +1,22 @@
+-each item,i in campaignarr
+   -var direction = campaignarr[i].direction
+   if(direction=="left" || direction =="")
+      .campaign
+         .campaign-pic
+            img&attributes({'src':campaignarr[i].src})
+            .campaign-content
+               h4.campaign-title #{campaignarr[i].title}
+               p.campaign-time #{campaignarr[i].time}
+               p.campaign-txt #{campaignarr[i].txt}
+               a&attributes({'href':campaignarr[i].url,'title':''}) 查看更多
+               span&attributes({'class':"stauts "+campaignarr[i].stauts})
+   else
+      .campaign.campaign-right
+         .campaign-pic
+            img&attributes({'src': campaignarr[i].src})
+            .campaign-content
+               h4.campaign-title #{campaignarr[i].title}
+               p.campaign-time #{campaignarr[i].time}
+               p.campaign-txt #{campaignarr[i].txt}
+               a&attributes({'href': campaignarr[i].url, 'title': ''}) 查看更多
+               span&attributes({'class': "stauts " + campaignarr[i].stauts})

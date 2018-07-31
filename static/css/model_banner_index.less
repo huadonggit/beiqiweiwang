@@ -1,0 +1,70 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.index-banner{
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  .index-banner-box{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    position: relative;
+    img{
+      width:100%;
+      height:auto;
+      display: none;
+      z-index:1;
+    }
+  }
+  .index-banner-circle-box{
+    width:100%;
+    height:8px;
+    position: absolute;
+    //margin-left: 50%;
+    //left:-84px;
+    //   margin-top: -30px;
+    left:0px;
+    bottom:30px;
+    z-index:555;
+    text-align: center;
+    .index-banner-circle-box-in{
+      display: inline-block;
+      *zoom: 1;
+      *display: inline;
+    }
+    .index-banner-circle{
+      width:8px;
+      height:8px;
+      background: #9e9e9e;
+      border-radius: 50%;
+      margin:0 10px;
+    }
+    .index-banner-circle-circle{
+      width:6px;
+      height:6px;
+      border:1px solid #fdfdfd;
+      background:none;
+    }
+    .index-banner-circle-disc{
+      border:none;
+      width:8px;
+      height:8px;
+      background: #9e9e9e;
+    }
+  }
+  .index-banner-left{
+    position: absolute;
+    top:50%;
+    left:100px;
+    cursor: pointer;
+  }
+  .index-banner-right{
+    position: absolute;
+    top:50%;
+    right:100px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,42 @@
+//
+   Created by gaojian on 16/3/12.
+    - var rootUrl = "topic/"
+    - var video_cover_url = [rootUrl+"topic_photo.jpg"]
+    - var playBtn_video_url = ["news/download/playBtn_video.png"]
+    - var video_down_Btn_url = ["news/download/icon_video_down.png"]
+    - var video_cover_url2 = [rootUrl+"topic_photo2.jpg"]
+    - var photoNewsUrl = ["report/photoNews_img0.jpg"]
+    - var videoDataList = [{title:'北汽威旺服务发布仪式',photoUrl:photoNewsUrl},{title:'爱在青海 北汽威旺环保公益行',photoUrl:photoNewsUrl},{title:'北汽威旺服务发布仪式',photoUrl:photoNewsUrl},{title:'爱在青海 北汽威旺环保公益行',photoUrl:photoNewsUrl},{title:'北汽威旺服务发布仪式',photoUrl:photoNewsUrl},{title:'爱在青海 北汽威旺环保公益行',photoUrl:photoNewsUrl},{title:'北汽威旺服务发布仪式',photoUrl:photoNewsUrl}]
+
+.video_download
+    .header.clearfix
+        div.title 视频下载
+        div.switch
+            a.left_btn.on_disable(href="javascript:;")
+                | <
+            a.right_btn(href="javascript:;")
+                | >
+    ul.video_list.clearfix
+        each item,index in videoDataList
+            if(index%2==0)
+                li.video_item.add_m_r
+                    .photo(date-src='static/video/01.flv')
+                        img&attributes({src: item.photoUrl})
+                        .playBtn
+                            img&attributes({src: playBtn_video_url})
+                    .bottom.clearfix
+                        p.title #{item.title}
+                        a.video_down_btn(href = item.photoUrl)
+                            img(src=video_down_Btn_url)
+                            span 下载
+            else
+                li.video_item
+                    .photo(date-src='static/video/01.flv')
+                        img&attributes({src: item.photoUrl})
+                        .playBtn
+                            img&attributes({src: playBtn_video_url})
+                    .bottom.clearfix
+                        p.title #{item.title}
+                        a.video_down_btn(href = item.photoUrl)
+                            img(src=video_down_Btn_url)
+                            span 下载

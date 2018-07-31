@@ -1,0 +1,16 @@
+.map-area
+	.map-left
+		.map-lists.scroll-pane
+			-var addressarr =[{'name':'中农通（北京）汽车销售有限公司','addr':'北京市朝阳区王四营乡五方桥东东郊农机仓库西侧','tel':'010-87391176','position':'116.404,39.915'},{'name':'北京冀东华明汽车贸易有限公司','addr':'北京市朝阳区南四环小红门桥东400米路南','tel':'010-87625242','position':'116.404,39.915'},{'name':'北京冀东华明汽车贸易有限公司','addr':'北京市朝阳区南四环小红门桥东400米路南','tel':'010-87625242','position':'116.404,39.915'},{'name':'北京冀东华明汽车贸易有限公司','addr':'北京市朝阳区南四环小红门桥东400米路南','tel':'010-87625242','position':'116.404,39.915'},{'name':'北京冀东华明汽车贸易有限公司','addr':'北京市朝阳区南四环小红门桥东400米路南','tel':'010-87625242','position':'116.404,39.915'},{'name':'北京冀东华明汽车贸易有限公司','addr':'北京市朝阳区南四环小红门桥东400米路南','tel':'010-87625242','position':'116.404,39.915'}]
+			-for(var i =0; i<addressarr.length;i++)
+				.map-list
+					h5.map-name&attributes({"data-position":addressarr[i].position})
+						span #{i+1}
+						strong #{addressarr[i].name}
+					p.map-addr #{addressarr[i].addr}
+					p.map-tel #{addressarr[i].tel}
+	.map-main
+		.map-pic
+			.map-pic-word 点击地图标示地址可直接发送至手机
+			#allmap
+

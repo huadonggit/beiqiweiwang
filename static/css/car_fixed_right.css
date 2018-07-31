@@ -1,0 +1,43 @@
+.car-fixed-right {
+  display: none;
+  width: 86px;
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  margin-top: -126px;
+  top: 50%;
+  background: url("../img/m20_right_fixed_back.png");
+  line-height: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  z-index: 999999999;
+  padding: 10px 0 9px 0;
+}
+.car-fixed-right a {
+  display: block;
+  padding: 5px 0 0 0;
+  margin-bottom: 14px;
+  text-decoration: none;
+}
+.car-fixed-right a img {
+  display: none;
+}
+.car-fixed-right a .noopen {
+  display: none;
+}
+.car-fixed-right a .yesopen {
+  display: block;
+}
+.car-fixed-right a:hover {
+  color: #9d1b12;
+}
+.car-fixed-right .car-fixed-pic {
+  width: 31px;
+  height: 34px;
+  margin: 0 auto;
+}
+.car-fixed-right .car-fixed-picword {
+  color: #fff;
+  margin: 0;
+}

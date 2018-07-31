@@ -1,0 +1,75 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "yhd";
+
+.m_table{
+  background: url("@{imgs}table_background.jpg");
+  background-repeat: no-repeat;
+  *background-repeat: repeat;
+  background-size: 100% 100%;
+  *background-size: cover;
+  //*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='@{imgs}table_background.jpg',sizingMethod='scale');
+  .m_t_title{
+    line-height:33px;
+    text-align: center;
+    font-size: 33px;
+    color: #fff;
+    padding-top: 5.6%;
+    margin-bottom: 40px;
+  }
+  .m_t_table{
+    //width:959px;
+    width:76.5%;
+    margin:0 auto;
+    height:457px;
+    overflow: hidden;
+    img{
+      width:100%;
+    }
+  }
+  .open{
+    height:auto;
+  }
+  .m_t_table_button{
+    width:76.5%;
+    margin:0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #b3b3b3;
+    height: 42px;
+    cursor: pointer;
+  }
+  .m_t_table_button:hover{
+    color:#9d1b12;
+  }
+  input{
+    margin:0;
+    padding:0;
+  }
+  .m_t_button{
+    margin:0 auto;
+    width:933px;
+    *width:auto;
+    text-align: center;
+    .m_t_button{
+      clear: both;
+      overflow: hidden;
+      width:252px;
+      height:46px;
+      display: inline-block;
+      *display:inline;
+      *zoom:1;
+      margin:48px 28px 94px;
+      line-height:46px;
+      border:1px solid #fff;
+      text-align: center;
+      font-size: 23px;
+      color: #fff;
+      background: url('@{images}m_table_white.png');
+    }
+  }
+}

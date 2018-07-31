@@ -1,0 +1,150 @@
+.video_download_gray {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+.video_download_gray .video_center_box {
+  width: 100%;
+  height: 100%;
+  background: url("../img/top_nav_gray_03.png");
+  position: relative;
+}
+.video_download_gray .video_center_box .video_center {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  margin: auto auto;
+}
+.video_download_gray .video_center_box .video_center .video_close {
+  width: 30px;
+  right: 30px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+.video_download {
+  margin: 5% 3%;
+  width: 94%;
+  overflow: hidden;
+}
+.video_download a {
+  text-decoration: none;
+}
+.video_download .header {
+  color: #9d1b12;
+  padding-bottom: 1%;
+  margin-bottom: 3.33%;
+  border-bottom: #f2f2f2 solid 1px;
+}
+.video_download .header .title {
+  float: left;
+  font-size: 1em;
+}
+.video_download .header .switch {
+  float: right;
+  display: none;
+}
+.video_download .header .switch a {
+  display: inline-block;
+  width: 33px;
+  text-align: center;
+  border: #9d1b12 solid 1px;
+  color: #9d1b12;
+  outline: none;
+  text-decoration: none;
+}
+.video_download .header .switch a.on_disable {
+  border-color: #999999;
+  color: #999999;
+}
+.video_download .header .switch a.left_btn {
+  border-right-width: 0px;
+}
+.video_download .header .switch a.right_btn.on_disable {
+  border-left-color: #9d1b12;
+}
+.video_download ul.video_list {
+  width: 400%;
+  overflow: hidden;
+  position: relative;
+}
+.video_download ul.video_list li.video_item {
+  float: left;
+  width: 12.143%;
+  background-color: #ffcccc;
+}
+.video_download ul.video_list li.video_item .photo {
+  position: relative;
+  cursor: pointer;
+}
+.video_download ul.video_list li.video_item .photo img {
+  width: 100%;
+  max-height: 320px;
+}
+.video_download ul.video_list li.video_item .photo .playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.video_download ul.video_list li.video_item .photo .playBtn img {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: -50%;
+  margin-top: -50%;
+}
+.video_download ul.video_list li.video_item .bottom {
+  width: 100%;
+  background-color: #eeeeee;
+  font-size: 1em;
+}
+.video_download ul.video_list li.video_item .bottom p.title {
+  display: block;
+  float: left;
+  color: #333333;
+  text-align: left;
+  padding: 1em 1em;
+  margin: 0em;
+}
+.video_download ul.video_list li.video_item .bottom a {
+  float: right;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #9d1b12;
+  width: 5em;
+  padding: 1em 1em;
+}
+.video_download ul.video_list li.video_item .bottom a img {
+  padding-right: 0.4em;
+}
+.video_download ul.video_list li.add_m_r {
+  margin-right: 0.714%;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}

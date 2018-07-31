@@ -1,0 +1,134 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "yhd";
+
+.m-looklike{
+  width:100%;
+  position: relative;
+  //overflow: hidden;
+  background: url("@{imgs}m30_background.png") no-repeat;
+  background-size: 100% 100%;
+  ul{
+    margin:0;
+    padding:0;
+  }
+  .m-look-appearance{
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 71px;
+    .m-look-word-box{
+      background: url("@{imgs}m30_word_01.png") no-repeat;
+      background-size: 100% 100%;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='@{imgs}m30_word_01.png',sizingMethod='scale');
+      width:32.3%;
+      margin: 10.8% auto auto 7.1%;
+      //overflow: hidden;
+      .m-look-word{
+        width:82.7%;
+        position: relative;
+        margin:23.0% 3.3% 19.9% 13.8%;
+        .m-look-title{
+          line-height:44px;
+          text-align: left;
+          font-size: 44px;
+          color: @fontColorDeep;
+          margin-bottom: 6px;
+          span{
+            line-height:44px;
+            text-align: left;
+            font-size: 43px;
+            color: #c71b27;
+            margin-left: 12px;
+          }
+        }
+        .m-look-english{
+          line-height:38px;
+          text-align: left;
+          font-size: 14px;
+          color: #323232;
+          //display: inline-block;
+          margin-bottom: 12px;
+          font-weight:lighter;
+          border-bottom: 1px solid #b0a6a1;
+        }
+        .m-look-con{
+          line-height:22px;
+          text-align: left;
+          font-size: 16px;
+          vertical-align: top;
+          color: @fontColorDeep;
+          margin-bottom: 49px;
+        }
+      }
+    }
+    .m-look-a-pic{
+      width:37.8%;
+      margin:11.1% 11.8% auto auto;
+      img{
+        width:100%;
+      }
+    }
+  }
+  .m-look-super{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    .m-look-a-pic{
+      width:56.6%;
+      margin:0 0 0 0;
+      img{
+        width:100%;
+      }
+    }
+    .m-look-word-box{
+      background: url("@{imgs}m30_word_02.png") no-repeat;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/m30_word_02.png',sizingMethod='scale');
+      background-size: 100% 100%;
+      width:38.3%;
+      position: absolute;
+      //padding: 12.5% 0 0 0;
+      margin: 3.9% auto auto 52%;
+      //overflow: hidden;
+      .m-look-word{
+        width:82.7%;
+        position: relative;
+        margin:9.7% 3.3% 19.9% 13.8%;
+        .m-look-title{
+          line-height:44px;
+          text-align: left;
+          font-size: 44px;
+          color: @fontColorDeep;
+          margin-bottom: 6px;
+          span{
+            line-height:44px;
+            text-align: left;
+            font-size: 43px;
+            color: #c71b27;
+            margin-left: 12px;
+          }
+        }
+        .m-look-english{
+          line-height:38px;
+          text-align: left;
+          font-size: 14px;
+          color: #323232;
+          margin-bottom: 12px;
+          font-weight:lighter;
+          border-bottom: 1px solid #b0a6a1;
+        }
+        .m-look-con{
+          line-height:22px;
+          text-align: left;
+          font-size: 16px;
+          vertical-align: top;
+          color: @fontColorDeep;
+          margin-bottom: 49px;
+        }
+      }
+    }
+
+  }
+
+}

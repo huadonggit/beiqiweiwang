@@ -1,0 +1,19 @@
+//
+   Created by gaojian on 16/3/10.
+    - var rootUrl = ""
+    - var news_timeLine_leftBtn = [rootUrl+"static/img/news/news_timeLine_leftBtn.png"]
+    - var news_timeLine_rightBtn = [rootUrl+"static/img/news/news_timeLine_rightBtn.png"]
+    - var yearsArr = ["2016","2017","2018","2019","2020"]
+
+
+.timeLineMune.clearfix
+    .leftBtn
+        img&attributes({src:news_timeLine_leftBtn})
+    ul.clearfix
+        each val, index in yearsArr
+            if(index == 0)
+                li.year.on= val
+            else
+                li.year=  val
+    .rightBtn
+        img&attributes({src: news_timeLine_rightBtn})

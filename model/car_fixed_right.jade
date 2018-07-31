@@ -1,0 +1,10 @@
+.car-fixed-right
+	- var imgsrc=''
+	- var carfixedrightpic=['static/img/m20_fixed_right_00.png','static/img/m20_fixed_right_11.png','static/img/m20_fixed_right_22.png']
+	- var carfixedrightpicred=['static/img/m20_fixed_right_r_00.png','static/img/m20_fixed_right_r_11.png','static/img/m20_fixed_right_r_22.png']
+	- var carfixedrightword=['预约试驾','在线订车','经销商查询']
+	- for (var i=0;i<carfixedrightpic.length;i++)
+		a(href='#')
+			img.car-fixed-pic&attributes({'src':carfixedrightpic[i]})
+			img.car-fixed-pic&attributes({'src': carfixedrightpicred[i]})
+			p.car-fixed-picword #{carfixedrightword[i]}

@@ -1,0 +1,77 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.lcontactus{
+  &:extend(.clearfix all);
+  padding: 50px 30px 120px;
+  .contactmap{
+    float: left;
+    border: 1px solid #cccccc;
+    width: 67.8%;
+    *width: 67.7%;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+  .contact_way{
+    float: left;
+    width: 32%;
+    *width: 31.9%;
+    .information{
+      color: #4c4c4c;
+      margin-left: 42px;
+      .comtitle{
+        font-size: 2.571em;
+        margin: 28px 0;
+      }
+      .address{
+        font-size: 1.142em;
+      }
+      .phone{
+        font-size: 1.998em;
+        display: block;
+        padding-left: 48px;
+        background: url("@{images}lphone.png") no-repeat left center;
+        margin-bottom: 0;
+      }
+      .cline{
+        width: 100%;
+        border-top: 1px solid #cccccc;
+        height: 1px;
+        margin: 20px 0 20px;
+      }
+      .lwechat{
+        &:extend(.clearfix all);
+        .pic{
+          float: left;
+          width: 112px;
+          text-align: left;
+          image{
+            display: block;
+          }
+          p{
+            font-size: 1em;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .sharelink{
+        &:extend(.clearfix all);
+        a{
+          float: left;
+          display: block;
+          width: 33px;
+          height: 33px;
+          margin-right: 26px;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

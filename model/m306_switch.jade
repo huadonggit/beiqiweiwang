@@ -1,0 +1,24 @@
+.m_switch_306
+	.m_switch_img
+		- var switchimg = ['static/img/3d_m306.png','static/img/3d_m306.png','static/img/3d_m306.png','static/img/3d_m306.png']
+		- for (var i=0;i<switchimg.length;i++)
+			img&attributes({'src': switchimg[i]})
+	.m_switch_square_box
+		.m_switch_square.m_switch_red
+		.m_switch_square.m_switch_blue
+		.m_switch_square.m_switch_golden
+		.m_switch_square.m_switch_silvery
+		.m_switch_square.m_switch_white
+		.m_switch_square.m_switch_brown
+
+
+//block script
+//	script(type="text/javascript").
+//		$(function(){
+//			$('.m_switch_img').find('img:first').show();
+//			$('.m_switch_square').each(function(i){
+//				$(this).click(function(){
+//					$('.m_switch_306').find('img').hide().eq(i).show();
+//				});
+//			});
+//		});

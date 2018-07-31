@@ -1,0 +1,15 @@
+//
+   Created by gaojian on 16/3/9.
+//
+    - var banner_rootUrl = ""
+    - var newsBannerImgArr = banner_rootUrl+"static/img/news/img_news_banner.jpg"
+    - var top_title = "品牌活动"
+    - var sub_title = "多媒体下载"
+.news_banner
+    .news_banner_box
+        img&attributes({src:newsBannerImgArr,alt:''})
+        .title
+            p.top_title #{top_title}
+            .under_line
+            p.sub_title #{sub_title}
+

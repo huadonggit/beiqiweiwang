@@ -1,0 +1,258 @@
+.html_3d_box {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.html_3d_box .html_3d_down {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.html_3d_box .html_3d_trim {
+  margin-left: 123px;
+  overflow: hidden;
+}
+.html_3d_box .html_3d_trim .html_3d_trim_pic {
+  width: 75px;
+  height: 74px;
+  margin-top: 7px;
+}
+.html_3d_box .html_3d_trim .html_3d_trim_pic a {
+  display: block;
+}
+.html_3d_box .html_3d_trim .html_3d_trim_word {
+  font-size: 15px;
+  color: #fff;
+  line-height: 57px;
+  text-align: left;
+  margin-left: 8px ;
+}
+.html_3d_box .html_3d_trim .html_3d_trim_word p {
+  margin: 0 auto;
+}
+.html_3d_box .html_3d_color {
+  display: inline-block;
+  height: 89px;
+  margin-top: 11px;
+  margin-left: -243px;
+}
+.html_3d_box .html_3d_color .chance_color_word {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  line-height: 57px;
+  text-align: left;
+  margin-right: 8px;
+}
+.html_3d_box .html_3d_color .chance_color_word li {
+  margin: 0 auto;
+}
+.html_3d_box .html_3d_color .chance_color_pic {
+  margin-right: 22px;
+  width: 47px;
+  display: inline-block;
+  font-size: 11px;
+  color: #fff;
+  line-height: 31px;
+  text-align: center;
+}
+.html_3d_box .html_3d_color .chance_color_pic a {
+  display: block;
+  outline: none;
+}
+.html_3d_box .html_3d_color .chance_color_pic img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px ;
+  margin-bottom: 4px;
+}
+.html_3d_box .html_3d_color .chance_color_pic .color_a_hover {
+  margin-top: 0px ;
+  margin-bottom: 0px;
+  width: 47px;
+  height: 46px;
+}
+.html_3d_box .html_3d_color .chance_color_pic .color_a_click {
+  margin-top: 0px ;
+  margin-bottom: 0px;
+  width: 47px;
+  height: 46px;
+}
+.html_3d_box .html_3d_color .chance_color_pic .shange_a_hover {
+  margin-top: 0px ;
+  margin-bottom: 0px;
+  width: 150px;
+  height: 50px;
+}
+.html_3d_box .html_3d_color .chance_color_pic .shange_a_click {
+  margin-top: 0px ;
+  margin-bottom: 0px;
+  width: 150px;
+  height: 50px;
+}
+.html_3d_box .html_3d_color .shangelist {
+  width: 150px;
+}
+.html_3d_box .html_3d_color_grating {
+  width: 214px;
+  height: 36px;
+  overflow: hidden;
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  margin-left: -107px;
+}
+.html_3d_box .html_3d_color_grating .color_grating {
+  width: 50%;
+  font-size: 13px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  background: #cecece;
+}
+.html_3d_box .html_3d_color_grating .color_grating a {
+  color: #000;
+  text-decoration: none;
+}
+.html_3d_box .html_3d_color_grating .color_grating_hover {
+  width: 50%;
+  font-size: 17px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+  background: #525051;
+}
+.html_3d_box .html_3d_color_grating .color_grating_hover a {
+  color: #fff;
+  text-decoration: none;
+}
+.html_3d_box .trim_chance {
+  position: absolute;
+  left: 123px;
+  bottom: 22px;
+  display: none;
+}
+.html_3d_box .trim_chance .trim_chancebox {
+  margin-right: 4px;
+}
+.html_3d_box .trim_chance .trim_chancebox .trim_pic {
+  margin-bottom: 3px;
+}
+.html_3d_box .trim_chance .trim_chancebox .trim_word {
+  font-size: 14px;
+  color: #fff;
+  line-height: 18px;
+  text-align: center;
+}
+.html_3d_box .trim_chance .trim_chancebox .trim_word p {
+  margin: 0 auto;
+}
+.html_3d_box .trim_chance_back {
+  display: none;
+  cursor: pointer;
+  width: 114px;
+  height: 33px;
+  position: absolute;
+  right: 124px;
+  top: 23px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 33px;
+  text-align: right;
+  background: url("../img/html_trim_03.png");
+}
+.html_3d_box .trim_chance_back p {
+  margin: 0 auto;
+  padding-right: 14px;
+}
+#qiandeng,
+#fadongji,
+#tianchuang,
+#chukongping,
+#yijianchukong,
+#biansuqi {
+  display: none;
+  background: url("../img/hot_disk_back_gray_03.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+#qiandeng .qiandeng-pic-box,
+#fadongji .qiandeng-pic-box,
+#tianchuang .qiandeng-pic-box,
+#chukongping .qiandeng-pic-box,
+#yijianchukong .qiandeng-pic-box,
+#biansuqi .qiandeng-pic-box {
+  width: 1154px;
+  height: 495px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+}
+#qiandeng .qiandeng-pic-box .qiandeng-pic-pic,
+#fadongji .qiandeng-pic-box .qiandeng-pic-pic,
+#tianchuang .qiandeng-pic-box .qiandeng-pic-pic,
+#chukongping .qiandeng-pic-box .qiandeng-pic-pic,
+#yijianchukong .qiandeng-pic-box .qiandeng-pic-pic,
+#biansuqi .qiandeng-pic-box .qiandeng-pic-pic {
+  width: 100%;
+  height: 100%;
+}
+#qiandeng .qiandeng-pic-box .qiandeng-pic-word,
+#fadongji .qiandeng-pic-box .qiandeng-pic-word,
+#tianchuang .qiandeng-pic-box .qiandeng-pic-word,
+#chukongping .qiandeng-pic-box .qiandeng-pic-word,
+#yijianchukong .qiandeng-pic-box .qiandeng-pic-word,
+#biansuqi .qiandeng-pic-box .qiandeng-pic-word {
+  position: absolute;
+  bottom: 7px;
+  left: 9px;
+  border-radius: 4px;
+  width: 411px;
+  height: 116px;
+  background: url("../img/hot_disk_back_write_09.png");
+}
+#qiandeng .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-title,
+#fadongji .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-title,
+#tianchuang .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-title,
+#chukongping .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-title,
+#yijianchukong .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-title,
+#biansuqi .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-title {
+  font-size: 24px;
+  line-height: 46px;
+  color: #000;
+  text-align: left;
+  margin-left: 13px;
+}
+#qiandeng .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-con,
+#fadongji .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-con,
+#tianchuang .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-con,
+#chukongping .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-con,
+#yijianchukong .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-con,
+#biansuqi .qiandeng-pic-box .qiandeng-pic-word .qiandeng-word-con {
+  font-size: 15px;
+  line-height: 27px;
+  color: #000;
+  text-align: left;
+  margin-left: 13px;
+}
+#qiandeng .qiandeng-pic-box .qiandeng-close,
+#fadongji .qiandeng-pic-box .qiandeng-close,
+#tianchuang .qiandeng-pic-box .qiandeng-close,
+#chukongping .qiandeng-pic-box .qiandeng-close,
+#yijianchukong .qiandeng-pic-box .qiandeng-close,
+#biansuqi .qiandeng-pic-box .qiandeng-close {
+  position: absolute;
+  top: 0;
+  right: -42px;
+  cursor: pointer;
+}

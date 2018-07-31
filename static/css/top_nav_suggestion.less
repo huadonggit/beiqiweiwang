@@ -1,0 +1,116 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "ltab";
+
+.tablist{
+  display: none;
+  .lcontainer{
+    ul.entrances{
+      &:extend(.clearfix all);
+      list-style: none;
+      margin: 0;
+      padding:85px 0 0;
+      li{
+        float:left;
+        width: 27.5%;
+        margin:0 2.5% 65px;
+        .entrance{
+          position: relative;
+          border:2px solid #e6e6e6;
+          text-align: center;
+          padding:25px 25px 50px;
+          border-radius:3px;
+          h3{
+            font-size:2em ;
+            line-height: 2.571em;
+            font-weight:normal;
+            margin:1em 0 0;
+            padding:0;
+            color:#000;
+          }
+          p{
+            margin:0;
+          }
+          .icon{
+            position:absolute;
+            top:-45px;
+            width:140px;
+            left: 50%;
+            margin-left: -70px;
+            text-align: center;
+            background: #fff;
+          }
+          .text{
+            line-height:1.857em ;
+            font-size:1.142em;
+            color:@fontColor;
+            height: 140px;
+            overflow: hidden;
+          }
+          .link{
+            position: absolute;
+            bottom:15px;
+            left: 0;
+            width:100%;
+            .knowmore{
+              color:#0067eb;
+              font-size: 1em;
+              line-height: 2em;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    ul.li4{
+      padding-left:10% ;
+      padding-right:10% ;
+      li{
+        width: 36%;
+        margin-left: 7%;
+        margin-right: 7%;
+      }
+    }
+  }
+}
+.tablist.on{
+  display: block;
+}
+
+@media only screen and (max-width:1024px) {
+  .tablist{
+    .lcontainer{
+      ul.entrances{
+        li{
+          width: 45%;
+          *width:44.8%;
+        }
+      }
+      ul.li4{
+        padding-left:0;
+        padding-right:0;
+        li{
+          width: 45%;
+          *width:44.8%;
+          margin-left: 2.5%;
+          margin-right: 2.5%;
+        }
+      }
+    }
+  }
+
+}
+@media only screen and (max-width:@breakPointMobile) {
+  .tablist{
+    .lcontainer{
+      ul.entrances{
+        li{
+          width: 95%;
+
+        }
+      }
+    }
+  }
+}

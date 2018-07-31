@@ -1,0 +1,25 @@
+extends layout.jade
+block leftNav
+
+
+
+	- var leftMVPDetialPic = ['./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png','./static/img/bq_left_mvp_detail_03.png']
+	- var leftCarList = ['MVP系列','SUV系列','交叉型乘用车','3D展厅']
+	- var leftMVPPic = ['./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png','./static/img/bq_left_mvp.png']
+	- var leftMVPName = ['威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007','威旺007']
+	include model/left_nav
+
+block content
+	include model/top_nav
+	- var d_banner1Data = {href1:'javascript:;',href2:'javascript:;',href3:'javascript:;',url:'static/img/buycar_process_banner_03.png'}
+	- var d_banner1Text = ['购车支持','购车流程']
+	include model/d_banner1
+
+	include model/process.jade
+
+	include model/foot.jade
+
+block script
+	script(src='static/js/model_left_nav.js' type='text/javascript')
+	script(src='static/js/model_top_nav.js' type='text/javascript')
+	script(src='static/js/model_buycar_li.js' type='text/javascript')

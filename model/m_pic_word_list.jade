@@ -1,0 +1,6 @@
+.m-pic-word-list
+	- for (var i=0;i<mpicwordpic.length;i++)
+		.m-pic-wordpic.fl
+			img&attributes({src:mpicwordpic[i]})
+			ul
+				li.m-pic-word-word #{mpicwordword[i]}

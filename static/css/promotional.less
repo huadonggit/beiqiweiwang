@@ -1,0 +1,54 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+
+.promotional{
+  padding: 0 30px;
+  margin:6% auto 5.79% auto;
+  overflow: hidden;
+  ul{
+    min-width: 1100px;
+    margin:0;
+    list-style: none;
+    padding: 0;
+    li{
+      .fl;
+      width: 49%;
+      *width:48.9%;
+      margin-left: 2%;
+      a{
+        display: block;
+        width: 100%;
+        position: relative;
+        text-decoration: none;
+        .promotional-pic{
+          img{
+            width: 100%;
+            height: auto;
+            border:0;
+          }
+        }
+        .promotional-content{
+          position: absolute;
+          left: 40px;
+          top:24%;
+          font-size: 30px;
+          color:#fff;
+          text-decoration: none;
+          span{
+            position: absolute;
+            left: 0;
+            top:150%;
+            width: 52px;
+            height: 52px;
+            background: url("@{images}/promotional-arrow.png") center no-repeat;
+          }
+        }
+      }
+    }
+    li:first-child{
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@import "variables";
+@import "normalize";
+@import "common";
+@import "layout";
+@import "yhd";
+
+.m_safe{
+  width:89.2%;
+  position: relative;
+  margin:12.9% 4.7% 6.37% 5%;
+  //margin:12.9% 4.7% 88px 5%;
+  overflow: hidden;
+  ul{
+    margin:0;
+    padding:0;
+  }
+  .m_s_word_box{
+    width:41.5%;
+  }
+  .m_s_word{
+    width:100%;
+    //width:100%;
+    position: relative;
+    .m_s_title{
+      line-height:35px;
+      text-align: left;
+      font-size: 35px;
+      color: @fontColorDeep;
+      margin-bottom: 8px;
+    }
+    .m_s_space{
+      display: inline;
+      line-height:31px;
+      text-align: left;
+      font-size: 15px;
+      color: #000;
+      padding-bottom: 9px;
+      //padding-right: 74px;
+      font-weight:lighter;
+      border-bottom: 1px solid #d1d1d1;
+      i{
+        line-height:31px;
+        text-align: left;
+        font-size: 14px;
+        color: #c71b27;
+        margin-bottom: 5px;
+        margin-left: 25px;
+      }
+    }
+    .m_s_con{
+      margin-top: 12px;
+      line-height:27px;
+      text-align: left;
+      font-size: 15px;
+      vertical-align: top;
+      color: @fontColorDeep;
+      margin-bottom: 49px;
+    }
+  }
+  .m_s_radar{
+    .m_s_pic{
+      line-height:36px;
+      text-align: center;
+      font-size: 27px;
+    }
+    .m_s_word{
+      display: inline-block;
+      line-height:62px;
+      text-align: left;
+      font-size: 20px;
+      color: @fontColor;
+    }
+    .m_s_gray{
+      width:1px;
+      height:72px;
+      overflow: hidden;
+      margin:auto 48px auto 32px;
+      background: url("@{images}m20_room_gray_03.png") 4px 0 ;
+    }
+  }
+  .m_s_structure{
+    width:49.0%;
+    margin-top: 51px;
+    img{
+      width:100%;
+    }
+  }
+}

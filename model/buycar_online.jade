@@ -1,0 +1,93 @@
+
+form(name='onlineform')
+    .buycar-online-word-up
+        p.t-n-red 请选择车辆
+    .buycar-online-advice
+        .t-n-list-box
+            .t-n-list
+                label.label-left.fl(for="")
+                    span.star *
+                    | 车系/车型
+                select(class="form-car-serise select-online-serise" value="" placeholder="" name="" id="")
+                    option(value="") 车系
+                    option(value="") 车系
+                    option(value="") 车系
+                select(class="form-car-model select-online-model" value="" placeholder="" name="" id="")
+                    option(value="") 车型
+                    option(value="") 车型
+                    option(value="") 车型
+            .t-n-list
+                label.label-left.fl(for="")
+                    span.star *
+                    | 经销商
+                select(class="form-repair-city select-online-city" value="" placeholder="" name="" id="")
+                    option(value="") 城市1
+                    option(value="") 城市2
+                    option(value="") 城市3
+                select(class="form-repair-area select-online-area" value="" placeholder="" name="" id="")
+                    option(value="") 地区4
+                    option(value="") 地区5
+                    option(value="") 地区6
+                select(class="form-repair-people select-online-people" value="" placeholder="" name="" id="")
+                    option(value="") 经销商7
+                    option(value="") 经销商8
+                    option(value="") 经销商9
+    .buycar-online-word-up
+        p.t-n-red 请填写您的个人信息:
+            span.t-n-gray *为必填项。您的信息，我们将会完全保密，请您放心填写。
+    .buycar-online-advice
+        .t-n-list-box
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 姓名
+                input.t-n-name(type="text" name="name" placeholder='请输入您的真实姓名')
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 手机
+                input.t-n-phone(type="text" name="phone")
+                label.lable-email-width(for="")
+                    | E-mail
+                input.t-n-e(type="text" name="email")
+            .t-n-list
+                label.label-left(for="")
+                    | 付款方式
+                label(for="" class="t-n-radio")
+                    input(type="radio" name="pay" value="").t-n-class
+                    | 一次性
+                label(for="" class='t-n-radio')
+                    input(type="radio" name="pay" value="").t-n-class
+                    | 二手车置换
+                label(for="" class='t-n-radio')
+                    input.t-n-class(type="radio" name="pay" value="other")
+                    | 贷款购车
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 期望提车时间
+                label(for="" class="t-n-radio")
+                    input(type="radio" name="time" value="advice").t-n-class
+                    | 一周
+                label(for="" class='t-n-radio')
+                    input(type="radio" name="time" value="aq").t-n-class
+                    | 两周
+                label(for="" class='t-n-radio')
+                    input.t-n-class(type="radio" name="time" value="other")
+                    | 一个月
+            .t-n-list
+                label.label-left(for="")
+                    span.star *
+                    | 是否需要试驾
+                label(for="" class="t-n-radio")
+                    input(type="radio" name="try" value="advice").t-n-class
+                    | 是
+                label(for="" class='t-n-radio')
+                    input(type="radio" name="try" value="aq").t-n-class
+                    | 否
+            .t-n-list
+                label.label-left(for="")
+                    | 其他说明
+                textarea.t-n-con(name="con" )
+        .submit-box
+            input.zp-submit(type="submit" value='提交')

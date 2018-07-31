@@ -1,0 +1,19 @@
+.sitemap
+	- var siteTitle = ['所有车型','购物支持','车主服务','品牌活动','认识威旺']
+	- var siteLink =[['MPV系列','SUV系列','交叉型乘用车','3D展厅'],['经销商查询','预约试驾','促销活动','在线订车','大客户服务'],['服务理念','预约维保','车主关怀'],['新闻中心','媒体报道','活动专题','多媒体下载'],['品牌文化','品牌历程','公益事业','人才计划']]
+	ul.maplist
+		- for ( var i=0;i<siteTitle.length;i++)
+			li
+				if (i==0)
+					a.sitetitle.bg1&attributes({href:"#",title:""}) #{siteTitle[i]}
+				else if (i==1)
+					a.sitetitle.bg2&attributes({href:"#",title:""}) #{siteTitle[i]}
+				else if (i==2)
+					a.sitetitle.bg3&attributes({href: "#", title: ""}) #{siteTitle[i]}
+				else if (i==3)
+					a.sitetitle.bg4&attributes({href: "#", title: ""}) #{siteTitle[i]}
+				else
+					a.sitetitle.bg5&attributes({href:"#",title:""}) #{siteTitle[i]}
+				.sitelinks
+					- for ( var j=0;j<siteLink[i].length;j++)
+						a.link&attributes({href:"#",title:""}) #{siteLink[i][j]}
